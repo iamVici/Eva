@@ -1,0 +1,13 @@
+:root {
+    --myred: #e93c40;
+    --myblack: #010101;
+    --mywhite: #eee;
+  }
+
+.myblack{
+    color: var(--myblack);
+  }
+  
+  .myred{
+    color: var(--myred);
+  }

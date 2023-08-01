@@ -1,0 +1,57 @@
+.menu {
+  position: fixed;
+  top: 60px;
+  padding: 0 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  z-index: 999;
+}
+
+.menu ul {
+  display: flex;
+  justify-content: left;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.menu li {
+  margin: 0 0;
+}
+
+.menu a {
+  text-decoration: none;
+  color: var(--myblack);
+  margin: 0;
+  border-bottom: 0; 
+  font-weight: bold;
+  padding: 10px 0;
+  cursor: none !important;
+  text-transform: uppercase;
+  font-weight: normal;
+  font-size: 20px;
+}
+
+.menu a.active {
+  color: var(--myred) !important;
+  font-family: 'ClashDisplay-Bold';
+}
+
+.menu .active {
+  color: var(--myred);
+  font-weight: bold;
+  /* border-bottom: 2px solid var(--myred); */
+  z-index: 999;
+}
+
+.menu ul li {
+  display: flex;
+  align-items: center;
+}
+
+.menu ul li:not(:last-child)::after {
+  content: " | ";
+  color: #000; /* ajuste a cor conforme necessário */
+  padding: 0 20px 4px 20px; /* ajuste o espaço conforme necessário */
+}

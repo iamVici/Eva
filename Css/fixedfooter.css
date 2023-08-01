@@ -1,0 +1,34 @@
+.footer{
+    margin-bottom: 60px;
+}
+
+.footer a{
+    font-weight: 900;
+    color: var(--myblack);
+    text-decoration: none !important;
+    cursor: none !important;
+}
+
+.footer a:active, a:hover{
+    color: var(--myred);
+}
+
+.footer p{
+    color: var(--myred);
+    font-family: 'ClashDisplay-Bold';
+}
+
+.footer a:not(:last-child)::after {
+    content: " | ";
+    color: #000; /* ajuste a cor conforme necessário */
+    padding: 4px 5px 0 5px; /* ajuste o espaço conforme necessário */
+}
+
+.onlanguage{
+    color: var(--myred) !important;
+}
+
+.gratitude{
+    font-size: 12px;
+    text-transform: uppercase;
+}
