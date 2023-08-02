@@ -1,3 +1,5 @@
+@import url('clash-display.css');
+
 body {
   height: 100vh;
   cursor: none !important; 
@@ -6,22 +8,19 @@ body {
   position: relative;
   background: linear-gradient(#eee, #dbdbdb);
   scroll-behavior: smooth;
+  font-family: 'ClashDisplay-Variable';
+  font-family: 'ClashDisplay-Extralight';
+  font-family: 'ClashDisplay-Light';
   font-family: 'ClashDisplay-Regular';
+  font-family: 'ClashDisplay-Medium';
+  font-family: 'ClashDisplay-Semibold';
+  font-family: 'ClashDisplay-Bold';
+  overflow-x: auto;
+  overflow-y: hidden;
 }
 
 h1, p, a {
   font-family: 'ClashDisplay-Regular';
-}
-
-#wrapper {
-  white-space: nowrap;
-  overflow-x: hidden;
-  overflow-y: hidden;
-}
-
-.section {
-  display: inline-block;
-  width: 100vw;
 }
 
 h1 {
@@ -32,16 +31,17 @@ a.active {
   color: var(--myred) !important;
 }
 
-.section {
-  height: 100vh; 
+#wrapper {
+  display: flex;
+  width: 100vw;
+  height: 100vh;
+  overflow-x: hidden;
+  overflow-y: hidden;
 }
 
-#particles{
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
+.section {
+  flex: 0 0 100vw;
+  height: 100vh;
 }
 
 .section {
@@ -70,4 +70,8 @@ a.active {
 
 .subtitle{
   margin-top: -20px;
+}
+
+a.active {
+  color: red; /* ou qualquer outra cor que você preferir */
 }

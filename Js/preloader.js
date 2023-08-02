@@ -14,8 +14,7 @@ window.addEventListener('load', function() {
             var content = document.getElementById('content');
             content.style.display = 'block';
 
-            var wrapper = document.getElementById('wrapper');
-            wrapper.style.display = 'block';
+
         }
     }, 50);  // Atualiza o progresso a cada 50ms
 });

@@ -24,7 +24,9 @@ function createParticle(x, y) {
         speedY: speedY, 
         rotation: Math.random() * Math.PI * 2,  
         opacity: Math.random(),
-        blur: size > 3 ? (size - 3) / 2 : 0  
+        blur: size > 3 ? (size - 3) / 2 : 0,
+        color: [255, 255, 255], // Inicialmente definido para branco
+        targetColor: [255, 255, 255]
     };
 
     return particle;
@@ -33,10 +35,30 @@ function createParticle(x, y) {
 function animateParticles() {
     ctx.clearRect(0, 0, canvas.width, canvas.height);
 
+    const loadingElement = document.getElementById('loading');
+    const isLoading = loadingElement && getComputedStyle(loadingElement).display !== 'none';
+
+    // Ajuste o z-index com base no status de carregamento
+    if (isLoading) {
+        canvas.style.zIndex = "99999";
+    } else {
+        canvas.style.zIndex = "0";
+    }
+
     particles.forEach((particle, index) => {
         particle.x += particle.speedX;
         particle.y += particle.speedY;
         particle.opacity -= 0.002;
+        particle.targetColor = isLoading ? [255, 255, 255] : [0, 0, 0]; // Muda para preto se não estiver loading, senão branco
+
+        // Gradualmente muda a cor da partícula para a cor alvo
+        for (let i = 0; i < 3; i++) {
+            if (particle.color[i] < particle.targetColor[i]) {
+                particle.color[i]++;
+            } else if (particle.color[i] > particle.targetColor[i]) {
+                particle.color[i]--;
+            }
+        }
 
         ctx.save();
         ctx.translate(particle.x, particle.y);
@@ -46,7 +68,7 @@ function animateParticles() {
         }else{
             ctx.filter = 'none';
         }
-        ctx.fillStyle = `rgba(0, 0, 0, ${particle.opacity})`;  
+        ctx.fillStyle = `rgba(${particle.color[0]}, ${particle.color[1]}, ${particle.color[2]}, ${particle.opacity})`;  
         ctx.fillRect(-particle.size / 2, -particle.size / 2, particle.size, particle.size);
 
         ctx.restore();
@@ -61,4 +83,3 @@ function animateParticles() {
 
 resizeWindow(); 
 animateParticles();
-

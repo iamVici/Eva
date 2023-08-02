@@ -19,6 +19,13 @@ function onMouseMove(e) {
     x: e.pageX - 5,
     y: e.pageY - 13
   });
+
+  // Manually trigger a wheel event
+  const wheelEvent = new WheelEvent("wheel", {
+    deltaX: e.movementX,
+    deltaY: e.movementY
+  });
+  document.body.dispatchEvent(wheelEvent);
 }
 
 // Hover an element
