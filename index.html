@@ -3,6 +3,7 @@
 <head>
   <!-- Início -->
   <title>Portfolio</title>
+  <!-- Meta -->
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <!-- Fonts -->
@@ -15,14 +16,16 @@
   <link rel="stylesheet" href="Css/customcursor.css">
   <link rel="stylesheet" href="Css/fixedfooter.css">
   <link rel="stylesheet" href="Css/particles.css">
+  <link rel="stylesheet" href="Css/timeline.css">
+  <link rel="stylesheet" href="Css/scroll.css">
   <!-- Bootstrap + FontAwesome git init-->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
   <!-- Loader -->
-  <link rel="stylesheet" href="Css/loading.css">
   <script src="Js/loading.js"></script>
+  <link rel="stylesheet" href="Css/loading.css">
   <!-- Bibliotecas Js necessárias -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/ScrollToPlugin.min.js"></script>
@@ -40,27 +43,29 @@
     </div>
   </div>
   <!-- Menu Superior -->
-  <div class="menu" style="z-index:999">
-    <div class="container d-flex p-0" style=" border-bottom: 2px solid var(--myblack);">
-      <ul class="justify-content-start">
-        <li><a href="#section1" data-order="1" class="nav-link hoverable section-link active">Hello</a></li>
-        <li><a href="#section2" data-order="2" class="nav-link hoverable section-link">I am Vici</a></li>
-        <li><a href="#section3" data-order="3" class="nav-link hoverable section-link">My Projects</a></li>
-        <li><a href="#section4" data-order="4" class="nav-link hoverable section-link">Let's work together</a></li>
-      </ul>
-      <div class="justify-content-end ms-auto d-flex align-items-center">
-        <a href="https://www.behance.net/iamvici" target="_blank" class="text-decoration-none px-2 hoverable">
-          <i class="bi bi-behance"></i>
-        </a>
-        <a href="https://github.com/iamVici" target="_blank" class="text-decoration-none px-2 hoverable">
-          <i class="bi bi-github"></i>
-        </a>
-        <a href="https://www.linkedin.com/in/victorpirescampos/" target="_blank" class="text-decoration-none ps-2 hoverable">
-          <i class="bi bi-linkedin"></i>
-        </a>
+  <nav>
+    <div class="menu" style="z-index:999">
+      <div class="container d-flex p-0" style=" border-bottom: 2px solid var(--myblack);">
+        <ul class="justify-content-start">
+          <li><a href="#section1" data-order="1" class="nav-link hoverable section-link active">Hello</a></li>
+          <li><a href="#section2" data-order="2" class="nav-link hoverable section-link">I am Vici</a></li>
+          <li><a href="#section3" data-order="3" class="nav-link hoverable section-link">My Projects</a></li>
+          <li><a href="#section4" data-order="4" class="nav-link hoverable section-link">Let's work together</a></li>
+        </ul>
+        <div class="justify-content-end ms-auto d-flex align-items-center">
+          <a href="https://www.behance.net/iamvici" target="_blank" class="text-decoration-none px-2 hoverable">
+            <i class="bi bi-behance"></i>
+          </a>
+          <a href="https://github.com/iamVici" target="_blank" class="text-decoration-none px-2 hoverable">
+            <i class="bi bi-github"></i>
+          </a>
+          <a href="https://www.linkedin.com/in/victorpirescampos/" target="_blank" class="text-decoration-none ps-2 hoverable">
+            <i class="bi bi-linkedin"></i>
+          </a>
+        </div>
       </div>
     </div>
-  </div>
+  </nav>
   <!-- Páginas -->
   <div id="wrapper" class="sections scrollspy" style="z-index:998">
     <div id="section1" data-order="1" class="section ">
@@ -71,7 +76,70 @@
       </div>
     </div>
     <div id="section2" data-order="2" class="section">
-      <h1>2</h1>
+      <div class="container px-0">
+        <div class="d-flex bd-highlight" style="max-height: 420px;">
+          <div class="p-0 bd-highlight col">
+            <img src="https://placehold.jp/000000/ffffff/420x420.png" alt="me">
+          </div>
+          <div class="p-0 bd-highlight col ps-4">
+            <p class="jp-title">私について | <span>Introdução</span></p>
+            <div class="hello">
+              <p>Oi, muito prazer! Eu sou o <span>Victor Pires</span>, mas pode me chamar de <span>Vici</span>. Além de gostar de café e energético, curto muito criar e tirar projetos do papel, trazendo-os para o mundo. É o que devemos fazer com nossos sonhos, certo?</p>
+              <p>Da mesma forma que gosto de desenhar projetos, gosto de desenvolvê-los, ainda mais em equipe.</p>
+              <p>Atuo nas áreas de <span>design</span> & <span>programação</span>. Almejo trabalhar com conteúdos que gosto e consumo normalmente, como: live streams, jogos e animes. </p>
+            </div>
+          </div>
+          <div class="p-0 bd-highlight col ps-4">
+            <p class="jp-title">エクスペリエンス | <span>experiências</span></p>
+            <div class="mytimeline">
+              <div class="timeline-container pb-0">
+                <div class="timeline">
+                  <!-- Freelancer -->
+                  <div class="job">
+                    <div class="content freelancer">
+                      <h4>Freelancer<span class="job-active">(Ativo)</span></h4>
+                      <span class="year">2021 - Today</span><hr>
+                      <p>Trabalhar como freelancer não só me permitiu conhecer pessoas das áreas que me interessam, mas também me proporcionou uma sensação de constante aprendizado e crescimento graças às experiências dos projetos em que participei.</p>
+                    </div>
+                  </div>
+                  <!-- Multimedia Designer -->
+                  <div class="job">
+                    <div class="content">
+                      <h4>Multimedia Designer<span class="job-aux">LiquidX ● Malaysia</span></h4>
+                      <span class="year">2023</span><hr>
+                      <p>Elaborei projetos abrangendo branding, elaboração de logotipos, criação de identidade para plataformas de mídia social como Discord e Twitter, além de editar e produzir materiais relacionados à temática central da empresa: produtos NFTs.<br><a class="hoverable" href="" target="_blank">Ver Projetos</a></p>
+                    </div>
+                  </div>
+                  <!-- Desenvolvedor Jr -->
+                  <div class="job">
+                    <div class="content">
+                      <h4>Desenvolvedor<span class="job-aux">Solutudo ● Brazil</span></h4>
+                      <span class="year">2022 - 2023</span><hr>
+                      <p>Além de criar páginas de vendas e realizar atualizações no website principal da Solutudo, também contribuí no gerenciamento do WordPress. Além disso, fiz parte da equipe de desenvolvimento do projeto "Mana", um sistema CRM (Gestão de Relacionamento com o Cliente) da empresa.<br><a class="hoverable" href="" target="_blank">Ver Projetos</a></p>
+                    </div>
+                  </div>
+                  <!-- Web Designer -->
+                  <div class="job">
+                    <div class="content">
+                      <h4>Web Designer<span class="job-aux">Solutudo ● Brazil</span></h4>
+                      <span class="year">2022</span><hr>
+                      <p>Com ênfase em um dos produtos da empresa, o Solusite, meu trabalho envolvia a criação de websites para os clientes, com o constante objetivo de otimizar a classificação e a legibilidade do site da forma mais eficaz possível.<br><a class="hoverable" href="" target="_blank">Ver Projetos</a></p>
+                    </div>
+                  </div>
+                  <!-- Designer Gráfico -->
+                  <div class="job">
+                    <div class="content">
+                      <h4>Designer Gráfico<span class="job-aux">Solutudo ● Brazil</span></h4>
+                      <span class="year">2021</span><hr>
+                      <p class="mb-0">Produção de conteúdo para mídias sociais em diversas plataformas, assim como elaboração de materiais impressos, tais como revistas, capas de livros e outdoors.</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
     <div id="section3" data-order="3" class="section">
       <h1>3</h1>
@@ -86,10 +154,13 @@
     <div class="container d-flex justify-content-between p-0 pt-1" style=" border-top: 2px solid var(--myblack);">
       <div class="bd-highlight">
         <a href="#" class="hoverable onlanguage">EN</a>
-        <a href="#" class="hoverable" style="color: #aaa !important">BR</a>
+        <a href="#" class="hoverable">BR</a>
+        <a href="#" class="" style="color: #aaa !important">JP</a>
       </div>
       <div class="bd-highlight">
-        <a href="thankyou.html" class="gratitude">Thank you</a>
+        <aside>
+          <a href="thankyou.html" class="gratitude hoverable">Thank you</a>
+        </aside>
       </div>
       <div class="bd-highlight d-flex align-items-center">
         <p>2023</p>

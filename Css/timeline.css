@@ -1,0 +1,116 @@
+.mytimeline {
+  overflow-y: scroll;
+  height: 374px;
+}
+
+.timeline-container {
+  overflow: visible;
+  padding-bottom: 15px;
+}
+
+.freelancer {
+  margin-bottom: 20px;
+}
+
+.freelancer h4{
+  background-color: var(--myblack) !important;
+  font-size: 16px;
+  text-transform: uppercase;
+  padding: 4px 10px;
+  color: white;
+}
+
+.job-active{
+  color: white;
+  font-size: 12px;
+  padding-left: 10px;
+}
+
+.job-aux{
+  font-size: 12px;
+  padding-left: 10px;
+}
+
+.freelancer {
+
+}
+
+.year{
+  font-family: 'ClashDisplay-Regular';
+  padding-bottom: 4px;
+  font-size: 14px;
+  text-transform: uppercase;
+}
+
+.timeline {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 100%;
+  position: relative;
+  padding: 0;
+}
+
+.timeline::before {
+  content: '';
+  position: absolute;
+  top: 15px;
+  bottom: 0;
+  left: 10px;
+  width: 2px;
+  background: var(--myblack);
+}
+
+.timeline .job::before {
+  content: '';
+  position: absolute;
+  left: -26px;
+  height: 15px;
+  width: 15px;
+  top: 7.5px;
+  background: var(--myblack);
+  border-radius: 0;
+}
+
+.timeline .job {
+  position: relative;
+  margin-left: 30px;
+}
+
+.timeline h4{
+  background-color: #d0d0d0;
+  font-size: 16px;
+  text-transform: uppercase;
+  padding: 6px 10px;
+  margin-right: 10px;
+}
+
+.timeline p{
+  padding-right: 10px;
+  margin-top: 10px;
+  /* text-align: justify; */
+}
+
+.timeline a{
+  text-decoration: none;
+  border-bottom: 1px solid var(--myred);
+  padding-bottom: 2px;
+  color: var(--myred);
+  cursor: none !important; 
+  text-transform: uppercase;
+  text-align: end;
+  font-size: 12px;
+  font-weight: bold;
+}
+
+.timeline a::after{
+  content: "🡽";
+}
+
+.timeline hr{
+  width: 10px;
+  height: 2px;
+  background-color: var(--myblack) !important;
+  margin: 10px 0 0 0;
+  opacity: 1;
+}

@@ -1,13 +1,29 @@
 :root {
-    --myred: #e93c40;
-    --myblack: #010101;
-    --mywhite: #eee;
-  }
+  --myred: #ee4242;
+  --myblack: #070707;
+  --mygreen: #54f0ac;
+  --myblue: #3983fc;
+  --mygold: #ffbc1c;
+  --mywhite: #f4f4f4;
+  --mygray: #d0d0d0;
+}
 
 .myblack{
-    color: var(--myblack);
-  }
+  color: var(--myblack);
+}
   
-  .myred{
-    color: var(--myred);
-  }
+.myred{
+  color: var(--myred);
+}
+
+.mywhite{
+  color: var(--mywhite);
+}
+
+.myrgreen{
+  color: var(--mygreen);
+}
+
+*{
+  --myoldred: #e93c40;
+}

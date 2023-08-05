@@ -38,6 +38,10 @@
   font-family: 'ClashDisplay-Bold';
 }
 
+.menu a:hover {
+  color: var(--myred) !important;
+}
+
 .menu .active {
   color: var(--myred);
   font-weight: bold;
