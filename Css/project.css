@@ -10,7 +10,7 @@
     margin-left: 0.5rem;
     background-position: center;
     background-size: cover;
-    box-shadow: inset 0 -3em 3em rgba(0, 0, 0, 0.5);
+    box-shadow: inset 0px -8em 20em 0em rgba(0, 0, 0, 0.2), inset 0px 0em 10em 0em rgba(0, 0, 0, 0.6);
     transition: all 0.3s ease;
 }
 
@@ -22,10 +22,6 @@
     margin-right: 0 !important;
 }
 
-.proj-eva {
-    background-image: url('../Assets/MainPage/cardtest.jpg');
-}
-
 .proj-numeration {
     color: black;
     text-transform: uppercase;
@@ -34,6 +30,9 @@
     margin: 0 10px 0 0;
     background-color: white;
     padding: 0 10px;
+    align-self: center;
+    min-width: 50px;
+    text-align: center;
 }
 
 .proj-subtitle{
@@ -52,51 +51,147 @@
     margin-bottom: 6px;
 }
 
-.proj-hover-text{
+.proj-category {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    flex-direction: column;
+    color: white;
+    font-family: 'ClashDisplay-Regular';
+    text-transform: uppercase;
+    padding: 1.5rem;
+    font-size: 12px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 1);
+}
+
+/*
+    Durante mousehover
+*/
+
+.proj-hover{
     display: none !important;
     background-color: rgba(0, 0, 0, 0.6);
     padding: 10px;
 }
 
-.proj-hover-text p {
-    color: white;
-    font-family: 'ClashDisplay-Regular';
-}
-
-.project:hover.proj-eva {
-
-}
-
-.project:hover .proj-hover-text {
-display: block !important;
-transition: all 1s ease;
-transition: opacity 0.3s ease;
+.project:hover .proj-hover {
+    display: block !important;
 }
 
 .project:hover .proj-numeration {
-display: none !important;
+    display: none !important;
 }
 
 .project:hover .proj-info {
-display: none !important;
+    display: none !important;
 }
 
-.proj-hover-text {
-position: absolute;
-top: 0;
-left: 0;
-right: 0;
-bottom: 0;
-display: flex;
-flex-direction: column;
-color: white;
-font-family: 'ClashDisplay-Regular';
-padding: 20px;
-transition: opacity 0.3s ease;
-transition: all 1s ease;
-z-index: 1;
+.project:hover .proj-category {
+    display: none !important;  
 }
 
-.project:hover .proj-hover-text {
+.proj-hover {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    flex-direction: column;
+    color: white;
+    font-family: 'ClashDisplay-Regular';
+    padding: 1.5rem;
+    z-index: 1;
+}
+
+.proj-hover hr{
+    width: 10px;
+    height: 2px;
+    background-color: var(--myblack) !important;
+    margin: 10px 0 10px 0;
+    opacity: 1;
+}
+
+.project:hover .proj-hover {
 display: flex;
+}
+
+.proj-hover-title{
+    color: white;
+    text-transform: uppercase;
+    font-size: 28px;
+    font-family: 'ClashDisplay-Bold';
+    margin: -10px 0 0 0;
+}
+
+.proj-hover-subtitle{
+    color: white;
+    font-size: 14px;
+    font-family: 'ClashDisplay-Regular';
+    margin: -6px 0 0 0;
+    padding: 0;
+}
+
+.proj-hover-content{
+    color: white;
+    font-size: 14px;
+    font-family: 'ClashDisplay-Regular';
+}
+
+.proj-hover-link{
+    text-decoration: none;
+    padding-bottom: 2px;
+    cursor: none !important; 
+    text-transform: uppercase;
+    text-align: end;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.proj-hover-link::after{
+    content: "🡽";
+ }
+
+.proj-hover-progress{
+    margin-bottom: 40px;
+}
+
+.proj-hover-progress-title{
+    font-size: 12px;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-bottom: 0;
+}
+
+.proj-hover-progress-status{
+    font-size: 12px;
+    font-weight: regular;
+    text-transform: uppercase;
+}
+
+
+.proj-hover-progress-value{
+    font-size: 12px;
+    font-weight: bold;
+    text-align: right;
+}
+
+.progress-bar{
+
+}
+
+.proj-hover-progress-bar{
+    margin-top: -10px;
+}
+
+.proj-hover-progress hr{
+    margin-top: -10px;
+}
+
+.progress {
+    color: white !important;
+    background-color: gray !important;
 }

@@ -19,6 +19,9 @@
   <link rel="stylesheet" href="Css/timeline.css">
   <link rel="stylesheet" href="Css/scroll.css">
   <link rel="stylesheet" href="Css/project.css">
+  <!-- Css Projects -->
+  <link rel="stylesheet" href="Css/Projects/project-eva.css">
+  <link rel="stylesheet" href="Css/Projects/project-infinity.css">
   <!-- Bootstrap + FontAwesome git init-->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
@@ -38,11 +41,11 @@
   <!-- Partículas -->
   <canvas id="particles"></canvas>
   <!-- Loading -->
-  <!-- <div id="loading">
+  <div id="loading">
     <div class="display-text">
       <h1>IAMVICI.COM</h1>
     </div>
-  </div> -->
+  </div>
   <!-- Menu Superior -->
   <nav>
     <div class="menu" style="z-index:999">
@@ -105,6 +108,7 @@
                       <p>Trabalhar como freelancer não só me permitiu conhecer pessoas das áreas que me interessam, mas também me proporcionou uma sensação de constante aprendizado e crescimento graças às experiências dos projetos em que participei.</p>
                     </div>
                   </div>
+                  
                   <!-- Multimedia Designer -->
                   <div class="job">
                     <div class="content">
@@ -147,102 +151,272 @@
     <!-- S3 -->
     <div id="section3" data-order="3" class="section">
       <div class="container px-0" style="display: inline-flex">
-
         <div class="projects w-100" style="display: inline-flex; overflow-x: scroll; padding-bottom: 10px;">
-
-            <div class="project proj-first proj-eva">
-              <div>
-                <p class="proj-numeration">01</p>
-              </div>
-              <div class="proj-info">
-                <p class="proj-subtitle">Projeto</p>
-                <p class="proj-title">Eva</p>
-              </div>
-              <div class="proj-hover-text">
-                <p>Texto hover.</p>
+          <!-- EVA -->
+          <div class="project proj-first proj-eva">
+            <!-- Face -->
+            <p class="proj-category">Identidade Visual<br><span>タイプ</span></p>
+            <div>
+              <p class="proj-numeration">1</p>
+            </div>
+            <div class="proj-info">
+              <p class="proj-subtitle">Projeto</p>
+              <p class="proj-title">Eva</p>
+            </div>
+            <!-- Face Virada -->
+            <div class="proj-hover">
+              <div class="d-flex flex-column" style="min-height: 380px;">
+                <div class="bd-highlight">
+                  <p class="proj-hover-title">Eva</p>
+                  <p class="proj-hover-subtitle">Bem-vinda ao mundo, Eva.</p>
+                  <hr>
+                  <p class="proj-hover-content">Em um mundo saturado de estímulos visuais, surge o projeto "Eva" – uma sinfonia visual que personifica a minha marca pessoal. Cada elemento que consiste Eva, é uma pincelada da personalidade única que define a atual fase da minha vida.<br><a class="hoverable proj-hover-link" href="" target="_blank">Ver Projeto</a></p>
+                </div>
+                <div class="proj-hover-progress mt-auto bd-highlight">
+                  <hr>
+                  <p class="proj-hover-progress-title">Status:</p>
+                  <div class="proj-hover-progress-content d-flex justify-content-between">
+                    <p class="proj-hover-progress-status proj-progress-eva"></p>
+                    <p class="proj-hover-progress-value"></p>
+                  </div>
+                  <div class="proj-hover-progress-bar">
+                    <div class="progress" role="progressbar" aria-label="1px high" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100" style="height: 2px">
+                      <div class="progress-bar" style="width: 40%"></div>
+                    </div>
+                  </div>
+                </div>
               </div>
             </div>
+          </div>
 
-            <div class="project proj-eva">
-              <div>
-                <p class="proj-numeration">02</p>
-              </div>
-              <div class="proj-info">
-                <p class="proj-subtitle">Projeto</p>
-                <p class="proj-title">Eva</p>
-              </div>
-              <div class="proj-hover-text">
-                <p>Texto hover.</p>
+          <!-- Infinity -->
+          <div class="project proj-first proj-infinity">
+            <!-- Face -->
+            <p class="proj-category">Stream<span>タイプ</span></p>
+            <div>
+              <p class="proj-numeration">2</p>
+            </div>
+            <div class="proj-info" style="margin-bottom: -10px !important;">
+              <p class="proj-subtitle" style="margin-bottom: -2px;">Projeto</p>
+              <p class="proj-title" style="line-height: 1.65rem;">Echoes <span style="font-size: 12px; margin: 0; padding: 0; line-height: 1">of</span><br>Infinity</p>
+            </div>
+            <!-- Face Virada -->
+            <div class="proj-hover">
+              <div class="d-flex flex-column" style="min-height: 380px;">
+                <div class="bd-highlight">
+                  <p class="proj-hover-title" style="font-size: 24px;">Echoes <span style="font-size: 12px; margin: 0; padding: 0; line-height: 1">of</span> Infinity</p>
+                  <p class="proj-hover-subtitle">As estrelas sussurram.</p>
+                  <hr>
+                  <p class="proj-hover-content">Adentre o reino virtual de "Echoes of Infinity", onde a realidade se mescla com o digital para criar uma experiência única de entretenimento. Este projeto abrangente é uma ode à diversão e à criatividade, sendo a força motriz por trás da icônica persona V-Tuber que é Eeiris.<br><a class="hoverable proj-hover-link" href="" target="_blank">Ver Projeto</a></p>
+                </div>
+                <div class="proj-hover-progress mt-auto bd-highlight">
+                  <hr>
+                  <p class="proj-hover-progress-title">Status:</p>
+                  <div class="proj-hover-progress-content d-flex justify-content-between">
+                    
+                    <p class="proj-hover-progress-status proj-progress-infinity"></p>
+                    <p class="proj-hover-progress-value"></p>
+                  </div>
+                  <div class="proj-hover-progress-bar">
+                    <div class="progress" role="progressbar" aria-label="1px high" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100" style="height: 2px">
+                      <div class="progress-bar"></div>
+                    </div>
+                  </div>
+                </div>
               </div>
             </div>
+          </div>
 
-            <div class="project proj-eva">
-              <div>
-                <p class="proj-numeration">03</p>
-              </div>
-              <div class="proj-info">
-                <p class="proj-subtitle">Projeto</p>
-                <p class="proj-title">Eva</p>
-              </div>
-              <div class="proj-hover-text">
-                <p>Texto hover.</p>
+          <!-- Midas -->
+          <div class="project proj-first proj-eva">
+            <!-- Face -->
+            <p class="proj-category">Identidade Visual<span>タイプ</span></p>
+            <div>
+              <p class="proj-numeration">3</p>
+            </div>
+            <div class="proj-info">.proj-hover-progress-status
+              <p class="proj-subtitle">Projeto</p>
+              <p class="proj-title">Midas</p>
+            </div>
+            <!-- Face Virada -->
+            <div class="proj-hover">
+              <div class="d-flex flex-column" style="min-height: 380px;">
+                <div class="bd-highlight">
+                  <p class="proj-hover-title">Eva</p>
+                  <p class="proj-hover-subtitle">Bem-vinda ao mundo, Eva.</p>
+                  <hr>
+                  <p class="proj-hover-content">Em um mundo saturado de estímulos visuais, surge o projeto "Eva" – uma sinfonia visual que personifica a minha marca pessoal. Cada elemento que consiste Eva, é uma pincelada da personalidade única que define a atual fase da minha vida.<br><a class="hoverable proj-hover-link" href="" target="_blank">Ver Projeto</a></p>
+                </div>
+                <div class="proj-hover-progress mt-auto bd-highlight">
+                  <hr>
+                  <p class="proj-hover-progress-title">Status:</p>
+                  <div class="proj-hover-progress-content d-flex justify-content-between">
+                    
+                    <p class="proj-hover-progress-status proj-progress-eva"></p>
+                    <p class="proj-hover-progress-value"></p>
+                  </div>
+                  <div class="proj-hover-progress-bar">
+                    <div class="progress" role="progressbar" aria-label="1px high" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100" style="height: 2px">
+                      <div class="progress-bar" style="width: 40%"></div>
+                    </div>
+                  </div>
+                </div>
               </div>
             </div>
-
-            <div class="project proj-eva">
-              <div>
-                <p class="proj-numeration">04</p>
-              </div>
-              <div class="proj-info">
-                <p class="proj-subtitle">Projeto</p>
-                <p class="proj-title">Eva</p>
-              </div>
-              <div class="proj-hover-text">
-                <p>Texto hover.</p>
+          </div>
+          
+          <!-- Cumulonimbus -->
+          <div class="project proj-first proj-eva">
+            <!-- Face -->
+            <p class="proj-category">Identidade Visual<span>タイプ</span></p>
+            <div>
+              <p class="proj-numeration">4</p>
+            </div>
+            <div class="proj-info" style="margin-bottom: -10px !important;">
+              <p class="proj-subtitle" style="margin-bottom: -2px;">Projeto</p>
+              <p class="proj-title" style="line-height: 1.65rem;">Cumulo<br>nimbus</p>
+            </div>
+            <!-- Face Virada -->
+            <div class="proj-hover">
+              <div class="d-flex flex-column" style="min-height: 380px;">
+                <div class="bd-highlight">
+                  <p class="proj-hover-title">Eva</p>
+                  <p class="proj-hover-subtitle">Bem-vinda ao mundo, Eva.</p>
+                  <hr>
+                  <p class="proj-hover-content">Em um mundo saturado de estímulos visuais, surge o projeto "Eva" – uma sinfonia visual que personifica a minha marca pessoal. Cada elemento que consiste Eva, é uma pincelada da personalidade única que define a atual fase da minha vida.<br><a class="hoverable proj-hover-link" href="" target="_blank">Ver Projeto</a></p>
+                </div>
+                <div class="proj-hover-progress mt-auto bd-highlight">
+                  <hr>
+                  <p class="proj-hover-progress-title">Status:</p>
+                  <div class="proj-hover-progress-content d-flex justify-content-between">
+                    
+                    <p class="proj-hover-progress-status proj-progress-eva"></p>
+                    <p class="proj-hover-progress-value"></p>
+                  </div>
+                  <div class="proj-hover-progress-bar">
+                    <div class="progress" role="progressbar" aria-label="1px high" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100" style="height: 2px">
+                      <div class="progress-bar" style="width: 40%"></div>
+                    </div>
+                  </div>
+                </div>
               </div>
             </div>
+          </div>
 
-            <div class="project proj-eva">
-              <div>
-                <p class="proj-numeration">05</p>
-              </div>
-              <div class="proj-info">
-                <p class="proj-subtitle">Projeto</p>
-                <p class="proj-title">Eva</p>
-              </div>
-              <div class="proj-hover-text">
-                <p>Texto hover.</p>
+          <!-- EVA -->
+          <div class="project proj-first proj-eva">
+            <!-- Face -->
+            <p class="proj-category">Identidade Visual<span>タイプ</span></p>
+            <div>
+              <p class="proj-numeration">5</p>
+            </div>
+            <div class="proj-info">
+              <p class="proj-subtitle">Projeto</p>
+              <p class="proj-title">Eva</p>
+            </div>
+            <!-- Face Virada -->
+            <div class="proj-hover">
+              <div class="d-flex flex-column" style="min-height: 380px;">
+                <div class="bd-highlight">
+                  <p class="proj-hover-title">Eva</p>
+                  <p class="proj-hover-subtitle">Bem-vinda ao mundo, Eva.</p>
+                  <hr>
+                  <p class="proj-hover-content">Em um mundo saturado de estímulos visuais, surge o projeto "Eva" – uma sinfonia visual que personifica a minha marca pessoal. Cada elemento que consiste Eva, é uma pincelada da personalidade única que define a atual fase da minha vida.<br><a class="hoverable proj-hover-link" href="" target="_blank">Ver Projeto</a></p>
+                </div>
+                <div class="proj-hover-progress mt-auto bd-highlight">
+                  <hr>
+                  <p class="proj-hover-progress-title">Status:</p>
+                  <div class="proj-hover-progress-content d-flex justify-content-between">
+                    
+                    <p class="proj-hover-progress-status proj-progress-eva"></p>
+                    <p class="proj-hover-progress-value"></p>
+                  </div>
+                  <div class="proj-hover-progress-bar">
+                    <div class="progress" role="progressbar" aria-label="1px high" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100" style="height: 2px">
+                      <div class="progress-bar" style="width: 40%"></div>
+                    </div>
+                  </div>
+                </div>
               </div>
             </div>
+          </div>
 
-            <div class="project proj-eva">
-              <div>
-                <p class="proj-numeration">06</p>
-              </div>
-              <div class="proj-info">
-                <p class="proj-subtitle">Projeto</p>
-                <p class="proj-title">Eva</p>
-              </div>
-              <div class="proj-hover-text">
-                <p>Texto hover.</p>
+          <!-- EVA -->
+          <div class="project proj-first proj-eva">
+            <!-- Face -->
+            <p class="proj-category">Identidade Visual<span>タイプ</span></p>
+            <div>
+              <p class="proj-numeration">6</p>
+            </div>
+            <div class="proj-info">
+              <p class="proj-subtitle">Projeto</p>
+              <p class="proj-title">Eva</p>
+            </div>
+            <!-- Face Virada -->
+            <div class="proj-hover">
+              <div class="d-flex flex-column" style="min-height: 380px;">
+                <div class="bd-highlight">
+                  <p class="proj-hover-title">Eva</p>
+                  <p class="proj-hover-subtitle">Bem-vinda ao mundo, Eva.</p>
+                  <hr>
+                  <p class="proj-hover-content">Em um mundo saturado de estímulos visuais, surge o projeto "Eva" – uma sinfonia visual que personifica a minha marca pessoal. Cada elemento que consiste Eva, é uma pincelada da personalidade única que define a atual fase da minha vida.<br><a class="hoverable proj-hover-link" href="" target="_blank">Ver Projeto</a></p>
+                </div>
+                <div class="proj-hover-progress mt-auto bd-highlight">
+                  <hr>
+                  <p class="proj-hover-progress-title">Status:</p>
+                  <div class="proj-hover-progress-content d-flex justify-content-between">
+                    
+                    <p class="proj-hover-progress-status proj-progress-eva"></p>
+                    <p class="proj-hover-progress-value"></p>
+                  </div>
+                  <div class="proj-hover-progress-bar">
+                    <div class="progress" role="progressbar" aria-label="1px high" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100" style="height: 2px">
+                      <div class="progress-bar" style="width: 40%"></div>
+                    </div>
+                  </div>
+                </div>
               </div>
             </div>
-
-            <div class="project proj-last proj-eva">
-              <div>
-                <p class="proj-numeration">07</p>
-              </div>
-              <div class="proj-info">
-                <p class="proj-subtitle">Projeto</p>
-                <p class="proj-title">Eva</p>
-              </div>
-              <div class="proj-hover-text">
-                <p>Texto hover.</p>
+          </div>
+          
+          <!-- EVA -->
+          <div class="project proj-first proj-eva">
+            <!-- Face -->
+            <p class="proj-category">Identidade Visual<span>タイプ</span></p>
+            <div>
+              <p class="proj-numeration">7</p>
+            </div>
+            <div class="proj-info">
+              <p class="proj-subtitle">Projeto</p>
+              <p class="proj-title">Eva</p>
+            </div>
+            <!-- Face Virada -->
+            <div class="proj-hover">
+              <div class="d-flex flex-column" style="min-height: 380px;">
+                <div class="bd-highlight">
+                  <p class="proj-hover-title">Eva</p>
+                  <p class="proj-hover-subtitle">Bem-vinda ao mundo, Eva.</p>
+                  <hr>
+                  <p class="proj-hover-content">Em um mundo saturado de estímulos visuais, surge o projeto "Eva" – uma sinfonia visual que personifica a minha marca pessoal. Cada elemento que consiste Eva, é uma pincelada da personalidade única que define a atual fase da minha vida.<br><a class="hoverable proj-hover-link" href="" target="_blank">Ver Projeto</a></p>
+                </div>
+                <div class="proj-hover-progress mt-auto bd-highlight">
+                  <hr>
+                  <p class="proj-hover-progress-title">Status:</p>
+                  <div class="proj-hover-progress-content d-flex justify-content-between">
+                    
+                    <p class="proj-hover-progress-status proj-progress-eva"></p>
+                    <p class="proj-hover-progress-value"></p>
+                  </div>
+                  <div class="proj-hover-progress-bar">
+                    <div class="progress" role="progressbar" aria-label="1px high" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100" style="height: 2px">
+                      <div class="progress-bar" style="width: 40%"></div>
+                    </div>
+                  </div>
+                </div>
               </div>
             </div>
-
+          </div>
         </div>
-
       </div>
     </div>
     <!-- S4 -->

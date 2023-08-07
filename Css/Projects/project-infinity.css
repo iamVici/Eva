@@ -1,0 +1,37 @@
+/*
+    Infinity
+*/
+
+.proj-infinity{
+    background-image: url('../../Assets/MainPage/cardtest.jpg');
+}
+
+.proj-infinity .proj-hover-progress-value::after{
+    content: '80%';
+    color: var(--myblue);
+}
+
+.proj-progress-infinity::after{
+    content: 'Em desenvolvimento';
+}
+
+.proj-infinity .proj-hover-progress-status, .proj-hover-progress-value, .proj-hover-link{
+    color: var(--myblue) !important;
+}
+
+.proj-infinity .progress{
+    --bs-progress-bar-bg: var(--myblue) !important;
+}
+
+.proj-infinity .proj-hover-link{
+    border-bottom: 1px solid var(--myblue) !important;
+    color: var(--myblue) !important;
+}
+
+.proj-infinity .proj-hover-link:hover{
+    color: var(--myblue) !important;
+}
+
+.proj-infinity .progress-bar{
+    width: 80%;
+}
