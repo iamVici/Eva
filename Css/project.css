@@ -1,46 +1,102 @@
-.project{
+.project {
+    position: relative; 
     display: flex;
     align-items: flex-end;
-    background-color: black; 
-    height: 395px; 
-    min-width: 280px; 
+    background-color: black;
+    height: 395px;
+    min-width: 280px;
     padding: 1.5rem;
-    margin-right: .5rem;
-    background-position: center; 
-    background-size: cover; 
-    box-shadow:inset 0 -3em 3em rgba(0, 0, 0, 0.5);
+    margin-right: 0.5rem;
+    margin-left: 0.5rem;
+    background-position: center;
+    background-size: cover;
+    box-shadow: inset 0 -3em 3em rgba(0, 0, 0, 0.5);
+    transition: all 0.3s ease;
 }
 
-.proj-eva{
-    background-image: url('../Assets/MainPage/cardtest.jpg'); 
+.proj-first {
+    margin-left: 0 !important;
 }
 
-.proj-numeration{
-    color: transparent;
+.proj-last {
+    margin-right: 0 !important;
+}
+
+.proj-eva {
+    background-image: url('../Assets/MainPage/cardtest.jpg');
+}
+
+.proj-numeration {
+    color: black;
     text-transform: uppercase;
-    font-size: 48px;
+    font-size: 40px;
     font-family: 'ClashDisplay-Bold';
     margin: 0 10px 0 0;
     background-color: white;
-    padding: 4px;
-}
-
-.proj-numeration::after{
-    content: ".";
+    padding: 0 10px;
 }
 
 .proj-subtitle{
     color: white;
     text-transform: uppercase;
-    font-size: 12px;
+    font-size: 10px;
     font-family: 'ClashDisplay-Regular';
     margin-bottom: -12px;
 }
 
 .proj-title{
     color: white;
-    margin: 0;
     text-transform: uppercase;
-    font-size: 38px;
+    font-size: 28px;
     font-family: 'ClashDisplay-Bold';
+    margin-bottom: 6px;
+}
+
+.proj-hover-text{
+    display: none !important;
+    background-color: rgba(0, 0, 0, 0.6);
+    padding: 10px;
+}
+
+.proj-hover-text p {
+    color: white;
+    font-family: 'ClashDisplay-Regular';
+}
+
+.project:hover.proj-eva {
+
+}
+
+.project:hover .proj-hover-text {
+display: block !important;
+transition: all 1s ease;
+transition: opacity 0.3s ease;
+}
+
+.project:hover .proj-numeration {
+display: none !important;
+}
+
+.project:hover .proj-info {
+display: none !important;
+}
+
+.proj-hover-text {
+position: absolute;
+top: 0;
+left: 0;
+right: 0;
+bottom: 0;
+display: flex;
+flex-direction: column;
+color: white;
+font-family: 'ClashDisplay-Regular';
+padding: 20px;
+transition: opacity 0.3s ease;
+transition: all 1s ease;
+z-index: 1;
+}
+
+.project:hover .proj-hover-text {
+display: flex;
 }
