@@ -1,11 +1,15 @@
 :root {
   --myred: #ee4242;
-  --myblack: #070707;
   --mygreen: #54f0ac;
   --myblue: #3983fc;
   --mygold: #ffbc1c;
+
+  --myblack: #070707;
   --mywhite: #f4f4f4;
   --mygray: #d0d0d0;
+
+  --myindigo: #9D8DF1;
+
 }
 
 .myblack{

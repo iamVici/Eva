@@ -4,7 +4,7 @@
     align-items: flex-end;
     background-color: black;
     height: 395px;
-    min-width: 280px;
+    min-width: 340px;
     padding: 1.5rem;
     margin-right: 0.5rem;
     margin-left: 0.5rem;
@@ -73,7 +73,7 @@
 
 .proj-hover{
     display: none !important;
-    background-color: rgba(0, 0, 0, 0.6);
+    background-color: rgba(0, 0, 0, 0.7);
     padding: 10px;
 }
 
@@ -81,16 +81,8 @@
     display: block !important;
 }
 
-.project:hover .proj-numeration {
+.project:hover :is(.proj-numeration, .proj-info, .proj-category) {
     display: none !important;
-}
-
-.project:hover .proj-info {
-    display: none !important;
-}
-
-.project:hover .proj-category {
-    display: none !important;  
 }
 
 .proj-hover {
@@ -122,22 +114,23 @@ display: flex;
 .proj-hover-title{
     color: white;
     text-transform: uppercase;
-    font-size: 28px;
+    font-size: 24px;
     font-family: 'ClashDisplay-Bold';
     margin: -10px 0 0 0;
 }
 
 .proj-hover-subtitle{
     color: white;
-    font-size: 14px;
+    font-size: 16px;
     font-family: 'ClashDisplay-Regular';
     margin: -6px 0 0 0;
     padding: 0;
+    line-height: 1rem;
 }
 
 .proj-hover-content{
     color: white;
-    font-size: 14px;
+    font-size: 16px;
     font-family: 'ClashDisplay-Regular';
 }
 
@@ -147,7 +140,7 @@ display: flex;
     cursor: none !important; 
     text-transform: uppercase;
     text-align: end;
-    font-size: 12px;
+    font-size: 14px;
     font-weight: bold;
 }
 
@@ -156,7 +149,7 @@ display: flex;
  }
 
 .proj-hover-progress{
-    margin-bottom: 40px;
+    margin-bottom: 34px;
 }
 
 .proj-hover-progress-title{
@@ -167,14 +160,14 @@ display: flex;
 }
 
 .proj-hover-progress-status{
-    font-size: 12px;
+    font-size: 14px;
     font-weight: regular;
     text-transform: uppercase;
 }
 
 
 .proj-hover-progress-value{
-    font-size: 12px;
+    font-size: 14px;
     font-weight: bold;
     text-align: right;
 }

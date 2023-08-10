@@ -1,0 +1,33 @@
+/*
+    Arca
+*/
+
+.proj-arca {
+    background-image: url('../../Assets/Project-Eva/card-eva.jpg');
+}
+
+.proj-arca .proj-hover-progress-value::after{
+    content: '40%';
+    color: var(--myred);
+}
+
+.proj-progress-arca::after{
+    content: 'Em desenvolvimento';
+}
+
+.proj-arca .proj-hover-progress-status, .proj-hover-progress-value, .proj-hover-link{
+    color: var(--myred) !important;
+}
+
+.proj-arca .progress{
+    --bs-progress-bar-bg: var(--myred) !important;
+}
+
+.proj-arca .proj-hover-link{
+    border-bottom: 1px solid var(--myred) !important;
+    color: var(--myred) !important;
+}
+
+.proj-arca .proj-hover-link:hover{
+    color: var(--myred) !important;
+}
