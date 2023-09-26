@@ -3,7 +3,9 @@
 */
 
 .proj-midas{
-    background-image: url('../../Assets/MainPage/cardtest.jpg');
+    background-image: url('../../Assets/MainPage/Project-Midas/card-midas.jpg');
+    box-shadow: none !important;
+    transition: 200ms;
 }
 
 .proj-midas .proj-hover-progress-value::after{
@@ -12,7 +14,8 @@
 }
 
 .proj-progress-midas::after{
-    content: 'Em desenvolvimento';
+    content: 'Em Hiato';
+    color: var(--mygold);
 }
 
 .proj-midas .proj-hover-progress-status, .proj-hover-progress-value, .proj-hover-link{
@@ -33,6 +36,5 @@
 }
 
 .proj-midas .progress-bar{
-    width: 50%;
     width: 50%;
 }

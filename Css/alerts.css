@@ -1,0 +1,11 @@
+.myalert-info {
+    display: flex;
+    background-color: var(--myblue);
+    color: white;
+    padding: 4px 8px;
+}
+  
+.myalert-info span{
+    font-weight: 400 !important;
+    font-family: 'ClashDisplay-Medium' !important;
+}

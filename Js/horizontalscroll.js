@@ -1,11 +1,22 @@
 var isScrolling = false;
 var isMouseOverTimeline = false;
 var isMouseOverProjects = false;
+var isMouseOverTextArea = false;
+var isMouseOverProjectItems = false;
+
 var currentSectionIndex = 0;
 var sections = document.querySelectorAll('.section');
 var wrapper = document.querySelector('#wrapper');
 var sectionPositions = Array.from(sections).map(sec => sec.offsetLeft);
 var menuLinks = document.querySelectorAll('.menu .section-link');
+
+var textareaDiv = document.querySelector('.form-textarea');
+textareaDiv.addEventListener('mouseover', function() {
+  isMouseOverTextArea = true;
+});
+textareaDiv.addEventListener('mouseout', function() {
+  isMouseOverTextArea = false;
+});
 
 var timelineDiv = document.querySelector('.mytimeline');
 timelineDiv.addEventListener('mouseover', function() {
@@ -23,15 +34,24 @@ projectsDiv.addEventListener('mouseout', function() {
   isMouseOverProjects = false;
 });
 
-projectsDiv.addEventListener('wheel', handleProjectScroll, {passive: false}); // Adicione essa linha
+var projectItemsDiv = document.querySelector('.project-items');
+projectItemsDiv.addEventListener('mouseover', function() {
+  isMouseOverProjectItems = true;
+});
+projectItemsDiv.addEventListener('mouseout', function() {
+  isMouseOverProjectItems = false;
+});
+
+projectsDiv.addEventListener('wheel', handleProjectScroll, {passive: false});
 
 function handleProjectScroll(event) {
   event.preventDefault();
-  this.scrollLeft += Math.sign(event.deltaY) * 40; // Altera a posição de rolagem horizontal baseado no deltaY do evento
+  this.scrollLeft += Math.sign(event.deltaY) * 40;
 }
 
 function handleScroll(event) {
-  if (isScrolling || isMouseOverTimeline || isMouseOverProjects) return;
+  if (isScrolling || isMouseOverTimeline || isMouseOverProjects || isMouseOverTextArea || isMouseOverProjectItems) return;
+
   isScrolling = true;
   event.preventDefault();
   var nextSectionIndex = event.deltaY > 0 
@@ -67,6 +87,7 @@ menuLinks.forEach(a => {
           onComplete: function() {
               isScrolling = false;
               isMouseOverProjects = false;
+              isMouseOverTextArea = false;
           }
       });
       menuLinks.forEach(a => a.classList.remove('active'));

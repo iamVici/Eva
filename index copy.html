@@ -1,11 +1,8 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="en">
 <head>
   <!-- Início -->
   <title>Portfolio</title>
-  <meta name="description" content="Portfolio de Victor Pires, designer gráfico e desenvolvedor web.">
-  <meta name="author" content="Victor Pires">
-  <meta name="keywords" content="design, web development, portfolio">
   <!-- Meta -->
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -37,29 +34,43 @@
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
   <!-- Loader -->
   <script src="Js/loading.js"></script>
   <link rel="stylesheet" href="Css/loading.css">
   <!-- Bibliotecas Js necessárias -->
   <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/ScrollToPlugin.min.js"></script>
   <!-- Script ConsoleLog -->
   <script src="Js/salvation.js"></script>
-  <script src="Js/tooltip.js"></script>
+
+
+<script type="text/javascript">
+
+$(document).ready(function() {
+    $("body").tooltip({ selector: '[data-toggle=tooltip]' });
+});
+
+    $(function () {
+        $("[rel='tooltip']").tooltip();
+    });
+</script>
 </head>
 
 <body>
   <!-- Partículas -->
   <canvas id="particles"></canvas>
   <!-- Loading -->
-  <div id="loading">
+  <!-- <div id="loading">
     <div class="display-text">
       <h1>IAMVICI.COM</h1>
     </div>
-  </div>
+  </div> -->
   <!-- Menu Superior -->
   <nav>
     <div class="menu" style="z-index:999">
@@ -99,8 +110,7 @@
       <div class="container px-0">
         <div class="d-flex bd-highlight" style="max-height: 420px;">
           <div class="p-0 bd-highlight col">
-            <!-- <img src="https://placehold.jp/000000/ffffff/420x420.png" alt="me"> -->
-            <img class="me-picture" src="Assets/MainPage/me.jpg" alt="me">
+            <img src="https://placehold.jp/000000/ffffff/420x420.png" alt="me">
           </div>
           <div class="p-0 bd-highlight col ps-4">
             <p class="jp-title">私について | <span>Introdução</span></p>
@@ -128,9 +138,7 @@
                     <div class="content">
                       <h4>Multimedia Designer<span class="job-aux">LiquidX ● Malaysia</span></h4>
                       <span class="year">2023</span><hr>
-                      <p>Elaborei projetos abrangendo branding, elaboração de logotipos, criação de identidade para plataformas de mídia social como Discord e Twitter, além de editar e produzir materiais relacionados à temática central da empresa: produtos NFTs.<br>
-                        <!-- <a class="hoverable" href="" target="_blank">Ver Projetos</a> -->
-                      </p>
+                      <p>Elaborei projetos abrangendo branding, elaboração de logotipos, criação de identidade para plataformas de mídia social como Discord e Twitter, além de editar e produzir materiais relacionados à temática central da empresa: produtos NFTs.<br><a class="hoverable" href="" target="_blank">Ver Projetos</a></p>
                     </div>
                   </div>
                   <!-- Desenvolvedor Jr -->
@@ -138,9 +146,7 @@
                     <div class="content">
                       <h4>Desenvolvedor<span class="job-aux">Solutudo ● Brazil</span></h4>
                       <span class="year">2022 - 2023</span><hr>
-                      <p>Além de criar páginas de vendas e realizar atualizações no website principal da Solutudo, também contribuí no gerenciamento do WordPress. Além disso, fiz parte da equipe de desenvolvimento do projeto "Mana", um sistema próprio CRM (Gestão de Relacionamento com o Cliente) da empresa. Trabalhei com as seguintes tecnologias: PHP, Javascript, SASS e Bootstrap.<br>
-                        <a class="hoverable" href="" target="_blank">Ver Projetos</a>
-                      </p>
+                      <p>Além de criar páginas de vendas e realizar atualizações no website principal da Solutudo, também contribuí no gerenciamento do WordPress. Além disso, fiz parte da equipe de desenvolvimento do projeto "Mana", um sistema próprio CRM (Gestão de Relacionamento com o Cliente) da empresa. Trabalhei com as seguintes tecnologias: PHP, Javascript, SASS e Bootstrap.<br><a class="hoverable" href="" target="_blank">Ver Projetos</a></p>
                     </div>
                   </div>
                   <!-- Web Designer -->
@@ -148,9 +154,7 @@
                     <div class="content">
                       <h4>Web Designer<span class="job-aux">Solutudo ● Brazil</span></h4>
                       <span class="year">2022</span><hr>
-                      <p>Com ênfase em um dos produtos da empresa, o Solusite, meu trabalho envolvia a criação de websites para os clientes, com o constante objetivo de otimizar a classificação e a legibilidade do site da forma mais eficaz possível.<br>
-                        <a class="hoverable" href="" target="_blank">Ver Projetos</a>
-                      </p>
+                      <p>Com ênfase em um dos produtos da empresa, o Solusite, meu trabalho envolvia a criação de websites para os clientes, com o constante objetivo de otimizar a classificação e a legibilidade do site da forma mais eficaz possível.<br><a class="hoverable" href="" target="_blank">Ver Projetos</a></p>
                     </div>
                   </div>
                   <!-- Designer Gráfico -->
@@ -170,135 +174,222 @@
     </div>
     <!-- S3 -->
     <div id="section3" data-order="3" class="section">
-      <div class="container">
-        <div class="row">
-          <div class="col-md-3 bg-black p-0" style="max-height: 420px;">
-            <div class="proj-container m-4 mr-0">
-              <div class="proj-hover proj-description p-4">
-                <div class="d-flex flex-column" style="height: 322px;"">
-                  <div class="bd-highlight">
-                    <p class="proj-hover-title"></p>
-                    <p class="proj-hover-subtitle"></p>
-                    <hr>
-                    <p class="proj-hover-content"></p>
+      <div class="container px-0">
+        <div class="projects w-100" style="display: inline-flex; overflow-x: scroll; padding-bottom: 10px;">
+          <!-- EVA -->
+          <div class="project proj-first proj-eva">
+            <!-- Face -->
+            <p class="proj-category">Identidade Visual<br><span>タイプ</span></p>
+            <div>
+              <p class="proj-numeration">1</p>
+            </div>
+            <div class="proj-info">
+              <p class="proj-subtitle">Projeto</p>
+              <p class="proj-title">Eva</p>
+            </div>
+            <!-- Face Virada -->
+            <div class="proj-hover">
+              <div class="d-flex flex-column" style="min-height: 380px;">
+                <div class="bd-highlight">
+                  <p class="proj-hover-title">Eva</p>
+                  <p class="proj-hover-subtitle">Da fome por conhecimento, ela emergiu.</p>
+                  <hr>
+                  <p class="proj-hover-content">Em um mundo visualmente saturado, surge "Eva" – uma sinfonia visual que encarna meu início. Cada elemento de Eva é uma pincelada da minha personalidade e conhecimento da fase atual da minha vida.<br><a class="hoverable proj-hover-link" href="" target="_blank">Ver Projeto</a></p>
+                </div>
+                <div class="proj-hover-progress mt-auto bd-highlight">
+                  <hr>
+                  <p class="proj-hover-progress-title">Status:</p>
+                  <div class="proj-hover-progress-content d-flex justify-content-between">
+                    <p class="proj-hover-progress-status proj-progress-eva"></p>
+                    <p class="proj-hover-progress-value"></p>
                   </div>
-                  <div class="proj-hover-progress m-0 bd-highlight mt-auto">
-                    <hr>
-                    <div class="proj-hover-progress-content d-flex justify-content-between myred">
-                      <p class="proj-hover-progress-status proj-progress-eva m-0"></p>
+                  <div class="proj-hover-progress-bar">
+                    <div class="progress" role="progressbar" aria-label="1px high" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100" style="height: 2px">
+                      <div class="progress-bar" style="width: 40%"></div>
                     </div>
                   </div>
                 </div>
               </div>
             </div>
           </div>
-          <div class="col-md-6 p-0">
-            <div class="projects w-100">
-              <!-- Carta -->
-              <div class="project proj-eva ps-0">
-                <!-- Face -->
-                <p class="proj-category ps-0">TIPO<br><span>タイプ</span></p>
-                <div>
-                  <p class="proj-numeration"></p>
+          <!-- Infinity -->
+          <div class="project proj-infinity">
+            <!-- Face -->
+            <p class="proj-category">Stream<span>タイプ</span></p>
+            <div>
+              <p class="proj-numeration">2</p>
+            </div>
+            <div class="proj-info" style="margin-bottom: -10px !important;">
+              <p class="proj-subtitle" style="margin-bottom: -2px;">Projeto</p>
+              <p class="proj-title" style="line-height: 1.65rem;">Echoes <span style="font-size: 12px; margin: 0; padding: 0; line-height: 1">of</span><br>Infinity</p>
+            </div>
+            <!-- Face Virada -->
+            <div class="proj-hover">
+              <div class="d-flex flex-column" style="min-height: 380px;">
+                <div class="bd-highlight">
+                  <p class="proj-hover-title">Echoes <span style="font-size: 12px; margin: 0; padding: 0; line-height: 1">of</span> Infinity</p>
+                  <p class="proj-hover-subtitle">As estrelas sussurram no vale da Infinitude.</p>
+                  <hr>
+                  <p class="proj-hover-content">Um universo onde os limites desaparecem e a imaginação ganha vida. Somos os arautos da margem da Infinitude, onde as vozes dos mistérios cósmicos ecoam sem fim.<br><a class="hoverable proj-hover-link" href="" target="_blank">Ver Projeto</a></p>
                 </div>
-                <div class="proj-info">
-                  <p class="proj-subtitle">Projeto</p>
-                  <p class="proj-title"></p>
+                <div class="proj-hover-progress mt-auto bd-highlight">
+                  <hr>
+                  <p class="proj-hover-progress-title">Status:</p>
+                  <div class="proj-hover-progress-content d-flex justify-content-between">
+                    <p class="proj-hover-progress-status proj-progress-infinity"></p>
+                    <p class="proj-hover-progress-value"></p>
+                  </div>
+                  <div class="proj-hover-progress-bar">
+                    <div class="progress" role="progressbar" aria-label="1px high" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100" style="height: 2px">
+                      <div class="progress-bar"></div>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
           </div>
-          <div class="col-md-3 project-items">
-            <p class="jp-title mb-3">エクスペリエンス | <span>projetos</span></p>
-            <div class="flex-column pe-2"  style="overflow-y: scroll; height: 374px;">
-              <!-- ITEM 1: Eva | Identidade Visual -->
-              <div class="project-list hoverable proj-list-eva active" style="border-bottom: solid 1px black;" 
-              data-title="Eva" data-subtitle='"Da fome por conhecimento ela surgiu. Da perseverança por sonhar ela se mantém."' 
-              data-content="Eva é a sinfonia visual que encarna meu início: desde as cores que escolhi para criá-la até a fonte que uso para representá-la. Cada elemento de Eva é um fragmento da minha personalidade e conhecimento da fase atual da minha vida." 
-              data-type="identidade visual | website" data-url="project-eva.html">
-                <div class="project-item d-inline-flex ps-2 py-2">
-                  <p class="project-number pe-2 m-0" style="color: gray">01.</p>
-                  <p class="project-name m-0 fs-4">Eva</p>
+          <!-- Midas -->
+          <div class="project proj-midas">
+            <!-- Face -->
+            <p class="proj-category">Fan Material<span>タイプ</span></p>
+            <div>
+              <p class="proj-numeration">3</p>
+            </div>
+            <div class="proj-info">
+              <p class="proj-subtitle">Projeto</p>
+              <p class="proj-title">Midas</p>
+            </div>
+            <!-- Face Virada -->
+            <div class="proj-hover">
+              <div class="d-flex flex-column" style="min-height: 380px;">
+                <div class="bd-highlight">
+                  <p class="proj-hover-title">Midas</p>
+                  <p class="proj-hover-subtitle">Transformando o comum em ouro através do valor da vontade.</p>
+                  <hr>
+                  <p class="proj-hover-content">A transformação é nossa essência, moldando e elevando de forma constante. Como a crisálida à borboleta, impulsiona a evolução, explorando novos horizontes e revelando nosso potencial interior.<br><a class="hoverable proj-hover-link" href="" target="_blank">Ver Projeto</a></p>
+                </div>
+                <div class="proj-hover-progress mt-auto bd-highlight">
+                  <hr>
+                  <p class="proj-hover-progress-title">Status:</p>
+                  <div class="proj-hover-progress-content d-flex justify-content-between">
+                    <p class="proj-hover-progress-status proj-progress-midas"></p>
+                    <p class="proj-hover-progress-value"></p>
+                  </div>
+                  <div class="proj-hover-progress-bar">
+                    <div class="progress" role="progressbar" aria-label="1px high" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100" style="height: 2px">
+                      <div class="progress-bar"></div>
+                    </div>
+                  </div>
                 </div>
               </div>
-              <!-- ITEM 2: Midas | Genshin Impact -->
-              <div class="project-list hoverable proj-list-midas" style="border-bottom: solid 1px black;" 
-              data-title="Midas" data-subtitle='"Este é seu momento. Este é seu dia dourado. Brilhe."' 
-              data-content="O fenômeno de aplicar o seu estilo e gosto à algo, pode ser chamado de transformação. Transformação é capaz de impulsionar a própria evolução, moldando a essência e a elevando de forma constante. Usei o jogo: Genshin Impact." 
-              data-type="genshin impact | website" data-url="">
-                <div class="project-item d-inline-flex ps-2 py-2">
-                  <p class="project-number pe-2 m-0" style="color: gray">02.</p>
-                  <p class="project-name m-0 fs-4">Midas</p>
+            </div>
+          </div>
+          <!-- Cumulonimbus -->
+          <div class="project proj-cumulonimbus">
+            <!-- Face -->
+            <p class="proj-category">WebSite<span>タイプ</span></p>
+            <div>
+              <p class="proj-numeration">4</p>
+            </div>
+            <div class="proj-info" style="margin-bottom: -10px !important;">
+              <p class="proj-subtitle" style="margin-bottom: -2px;">Projeto</p>
+              <p class="proj-title" style="line-height: 1.65rem;">Cumulo<br>nimbus</p>
+            </div>
+            <!-- Face Virada -->
+            <div class="proj-hover">
+              <div class="d-flex flex-column" style="min-height: 380px;">
+                <div class="bd-highlight">
+                  <p class="proj-hover-title">Eva</p>
+                  <p class="proj-hover-subtitle">Bem-vinda ao mundo, Eva.</p>
+                  <hr>
+                  <p class="proj-hover-content">Em um mundo saturado de estímulos visuais, surge o projeto "Eva" – uma sinfonia visual que personifica a minha marca pessoal. Cada elemento que consiste Eva, é uma pincelada da personalidade única que define a atual fase da minha vida.<br><a class="hoverable proj-hover-link" href="" target="_blank">Ver Projeto</a></p>
+                </div>
+                <div class="proj-hover-progress mt-auto bd-highlight">
+                  <hr>
+                  <p class="proj-hover-progress-title">Status:</p>
+                  <div class="proj-hover-progress-content d-flex justify-content-between">
+                    <p class="proj-hover-progress-status proj-progress-cumulonimbus"></p>
+                    <p class="proj-hover-progress-value"></p>
+                  </div>
+                  <div class="proj-hover-progress-bar">
+                    <div class="progress" role="progressbar" aria-label="1px high" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100" style="height: 2px">
+                      <div class="progress-bar" style="width: 40%"></div>
+                    </div>
+                  </div>
                 </div>
               </div>
-              <!-- ITEM 3: Infinity | Eeiris -->
-              <div class="project-list hoverable proj-list-infinity" style="border-bottom: solid 1px black;" 
-              data-title="Infinity" data-subtitle='"As estrelas sussurram do vale do infinito. O som das vozes ecoam na minha mente."' 
-              data-content="Em um universo onde os limites desaparecem e a imaginação ganha vida, somos os arautos deste tal resplendor. Auxiliei na criação de detalhes e desenvolvimento criativo de uma personagem fictícia chamada: Eeiris." 
-              data-type="v-tuber | youtube" data-url="">
-                <div class="project-item d-inline-flex ps-2 py-2">
-                  <p class="project-number pe-2 m-0" style="color: gray">03.</p>
-                  <p class="project-name m-0 fs-4">Infinity</p>
+            </div>
+          </div>
+          <!-- Next Odyssey -->
+          <div class="project proj-odyssey">
+            <!-- Face -->
+            <p class="proj-category">Identidade Visual<span>タイプ</span></p>
+            <div>
+              <p class="proj-numeration">5</p>
+            </div>
+            <div class="proj-info" style="margin-bottom: -10px !important;">
+              <p class="proj-subtitle" style="margin-bottom: -2px;">Projeto</p>
+              <p class="proj-title" style="line-height: 1.65rem;">Next<br>Odyssey</p>
+            </div>
+            <!-- Face Virada -->
+            <div class="proj-hover">
+              <div class="d-flex flex-column" style="min-height: 380px;">
+                <div class="bd-highlight">
+                  <p class="proj-hover-title">Eva</p>
+                  <p class="proj-hover-subtitle">Bem-vinda ao mundo, Eva.</p>
+                  <hr>
+                  <p class="proj-hover-content">Em um mundo saturado de estímulos visuais, surge o projeto "Eva" – uma sinfonia visual que personifica a minha marca pessoal. Cada elemento que consiste Eva, é uma pincelada da personalidade única que define a atual fase da minha vida.<br><a class="hoverable proj-hover-link" href="" target="_blank">Ver Projeto</a></p>
+                </div>
+                <div class="proj-hover-progress mt-auto bd-highlight">
+                  <hr>
+                  <p class="proj-hover-progress-title">Status:</p>
+                  <div class="proj-hover-progress-content d-flex justify-content-between">
+                    
+                    <p class="proj-hover-progress-status proj-progress-odyssey"></p>
+                    <p class="proj-hover-progress-value"></p>
+                  </div>
+                  <div class="proj-hover-progress-bar">
+                    <div class="progress" role="progressbar" aria-label="1px high" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100" style="height: 2px">
+                      <div class="progress-bar" style="width: 40%"></div>
+                    </div>
+                  </div>
                 </div>
               </div>
-              <!-- ITEM 4: Cumulonimbus | Animes -->
-              <div class="project-list hoverable proj-list-cumulonimbus" style="border-bottom: solid 1px black;" 
-              data-title="Cumulonimbus" data-subtitle='""' 
-              data-content="" 
-              data-type="game | website" data-url="">
-                <div class="project-item d-inline-flex ps-2 py-2">
-                  <p class="project-number pe-2 m-0" style="color: gray">04.</p>
-                  <p class="project-name m-0 fs-4">Cumulonimbus</p>
+            </div>
+          </div>
+          <!-- Arca -->
+          <div class="project proj-last proj-arca">
+            <!-- Face -->
+            <p class="proj-category">Jogo de Cartas<span>タイプ</span></p>
+            <div>
+              <p class="proj-numeration">6</p>
+            </div>
+            <div class="proj-info">
+              <p class="proj-subtitle">Projeto</p>
+              <p class="proj-title">Arca</p>
+            </div>
+            <!-- Face Virada -->
+            <div class="proj-hover">
+              <div class="d-flex flex-column" style="min-height: 380px;">
+                <div class="bd-highlight">
+                  <p class="proj-hover-title">Eva</p>
+                  <p class="proj-hover-subtitle">Bem-vinda ao mundo, Eva.</p>
+                  <hr>
+                  <p class="proj-hover-content">Em um mundo saturado de estímulos visuais, surge o projeto "Eva" – uma sinfonia visual que personifica a minha marca pessoal. Cada elemento que consiste Eva, é uma pincelada da personalidade única que define a atual fase da minha vida.<br><a class="hoverable proj-hover-link" href="" target="_blank">Ver Projeto</a></p>
                 </div>
-              </div>
-              <!-- ITEM 5: Odyssey | League of Legends -->
-              <div class="project-list hoverable proj-list-cumulonimbus" style="border-bottom: solid 1px black;" 
-              data-title="Cumulonimbus" data-subtitle='""' 
-              data-content="" 
-              data-type="game | website" data-url="">
-                <div class="project-item d-inline-flex ps-2 py-2">
-                  <p class="project-number pe-2 m-0" style="color: gray">05.</p>
-                  <p class="project-name m-0 fs-4">Odyssey</p>
-                </div>
-              </div>
-              <!-- ITEM 6:  | Stream -->
-              <div class="project-list hoverable proj-list-cumulonimbus" style="border-bottom: solid 1px black;" 
-              data-title="Cumulonimbus" data-subtitle='""' 
-              data-content="" 
-              data-type="game | website" data-url="">
-                <div class="project-item d-inline-flex ps-2 py-2">
-                  <p class="project-number pe-2 m-0" style="color: gray">06.</p>
-                  <p class="project-name m-0 fs-4"></p>
-                </div>
-              </div>
-              <!-- ITEM 7: Paradise | Website -->
-              <div class="project-list hoverable proj-list-cumulonimbus" style="border-bottom: solid 1px black;" 
-              data-title="Cumulonimbus" data-subtitle='""' 
-              data-content="" 
-              data-type="game | website" data-url="">
-                <div class="project-item d-inline-flex ps-2 py-2">
-                  <p class="project-number pe-2 m-0" style="color: gray">07.</p>
-                  <p class="project-name m-0 fs-4">Paradise</p>
-                </div>
-              </div>
-              <!-- ITEM 8:  -->
-              <div class="project-list hoverable proj-list-cumulonimbus" style="border-bottom: solid 1px black;" 
-              data-title="Cumulonimbus" data-subtitle='""' 
-              data-content="" 
-              data-type="game | website" data-url="">
-                <div class="project-item d-inline-flex ps-2 py-2">
-                  <p class="project-number pe-2 m-0" style="color: gray">08.</p>
-                  <p class="project-name m-0 fs-4"></p>
-                </div>
-              </div>
-              <!-- ITEM 9:  -->
-              <div class="project-list hoverable proj-list-cumulonimbus" style="border-bottom: solid 1px black;" 
-              data-title="Cumulonimbus" data-subtitle='""' 
-              data-content="" 
-              data-type="game | website" data-url="">
-                <div class="project-item d-inline-flex ps-2 py-2">
-                  <p class="project-number pe-2 m-0" style="color: gray">09.</p>
-                  <p class="project-name m-0 fs-4"></p>
+                <div class="proj-hover-progress mt-auto bd-highlight">
+                  <hr>
+                  <p class="proj-hover-progress-title">Status:</p>
+                  <div class="proj-hover-progress-content d-flex justify-content-between">
+                    
+                    <p class="proj-hover-progress-status proj-progress-arca"></p>
+                    <p class="proj-hover-progress-value"></p>
+                  </div>
+                  <div class="proj-hover-progress-bar">
+                    <div class="progress" role="progressbar" aria-label="1px high" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100" style="height: 2px">
+                      <div class="progress-bar" style="width: 40%"></div>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
@@ -311,20 +402,20 @@
       <div class="container d-flex px-0" style="max-height: 420px;">
         <div class="col-md-3">
           <!-- OUR -->
-          <div class="our-project" > 
+          <div class="our-project " > 
             <div class="project proj-first proj-our hoverable" id="interactive-card">
               <!-- Face -->
               <div class="proj-category">
                 <div class="d-inline-flex">
                   <div class="typewriter-text" id="typewriter"></div><span class="typewriter-cursor" id="typewriter-cursor">|</span>
                 </div>
-                <!-- <span>タイプ</span> -->
+                <span>タイプ</span>
               </div>
               <!-- <p class="proj-category typewriter-text"  id="typewriter">Identidade Visual<br><span>タイプ</span></p> -->
               <div>
                 <p class="proj-numeration">X</p>
               </div>
-              <div class="proj-info" style="margin-bottom: 16px !important;">
+              <div class="proj-info" style="margin-bottom: -10px !important;">
                 <p class="proj-subtitle" style="margin-bottom: -2px;">Projeto</p>
                 <p class="proj-title" style="line-height: 1.65rem;">Futuro</p>
               </div>
@@ -378,7 +469,7 @@
                 <div class="pt-2">
                   <!-- Mensagem -->
                   <label class="label" for="name">Mensagem:</label>
-                  <textarea placeholder="Descreva seu projeto ou ideia que gostaria de tirar do papel." class="form-control hoverable form-textarea" style="cursor:none" name="message" rows="10" id="message" required></textarea>
+                  <textarea placeholder="Pronto para ver suas ideias saindo do seu caderno?" class="form-control hoverable form-textarea" style="cursor:none" name="message" rows="10" id="message" required></textarea>
                 </div>
               </div>
               <div>
@@ -394,15 +485,13 @@
       </div>
     </div>
   </div>
-
   <!-- Footer Fixo-->
   <div class="footer fixed-bottom" style="z-index:999">
     <div class="container d-flex justify-content-between p-0 pt-1" style=" border-top: 2px solid var(--myblack);">
       <div class="bd-highlight">
-        <a class="hoverable onlanguage">BR</a>
-        <!-- <a href="#" class="hoverable">EN</a> -->
-        <a href="#" class="" style="color: #aaa !important">EN</a>
-        <a href="#" class="" style="color: #aaa !important">JP</a>
+        <a href="#" class="hoverable onlanguage">EN</a>
+        <a href="#" class="hoverable">BR</a>
+        <!-- <a href="#" class="" style="color: #aaa !important">JP</a> -->
       </div>
       <div class="bd-highlight">
         <!-- <aside>
@@ -414,7 +503,6 @@
       </div>
     </div>
   </div>
-
   <!-- Cursor Personalizado -->
   <div class="cursor" style="position:absolute">
     <div class="cursor__ball cursor__ball--big">
@@ -429,11 +517,13 @@
     </div>
   </div>
 
-  <!-- Biblioteca jQuery -->
-  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-  <!-- Biblioteca do Bootstrap -->
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  
+  <!-- Inclua a biblioteca jQuery -->
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+<!-- Inclua a biblioteca do Bootstrap -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
   <!-- Script Partículas -->
   <script src="Js/clipboard.js"></script>
   <!-- Script Partículas -->
@@ -445,7 +535,5 @@
   <!-- Script Partículas -->
   <script src="Js/typewriter.js"></script>
   <script src="Js/card.js"></script>
-  <script src="Js/project.js"></script>
-
 </body>
 </html>

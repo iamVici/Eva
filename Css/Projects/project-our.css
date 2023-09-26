@@ -1,9 +1,16 @@
 /*
     OUR
 */
-
 .proj-our {
-    background-image: url('../../Assets/Project-Eva/card-eva.jpg');
+    background-image: url('../../Assets/MainPage/door.jpg');
+    filter: drop-shadow(3px 3px 6px rgba(0,0,0,.10));
+    border: none !important;
+    box-shadow: inset 10em 2em 8em rgba(0, 0, 0, 0.4) !important;
+}
+
+.our-project .project::before{
+    background: none !important;
+    width: 0;
 }
 
 .proj-our .proj-hover-progress-value::after{
@@ -32,11 +39,25 @@
     color: var(--myred) !important;
 }
 
+
 .our-project .project {
     height: 420px !important;
-    max-width: 280px !important;
+    min-width: 100% !important;
 }
 
 .our-project .project:hover :is(.proj-numeration, .proj-info, .proj-category) {
     display: block !important;
 }
+
+@keyframes blink {
+    0% { opacity: 1.0; }
+    50% { opacity: 0.0; }
+    100% { opacity: 1.0; }
+  }
+  
+  #typewriter-cursor {
+    animation-name: blink;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    margin-left: 2px;
+  }

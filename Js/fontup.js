@@ -5,7 +5,6 @@ if ('fonts' in document) {
     
     font.load().then(function() {
       document.fonts.add(font);
-      document.body.style.fontFamily = "ClashDisplay-Bold"; 
+      document.body.style.fontFamily = "ClashDisplay"; 
     });
-  }
-  
+  };

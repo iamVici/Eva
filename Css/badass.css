@@ -9,13 +9,6 @@ body {
   position: relative;
   background: linear-gradient(#eee, #dbdbdb);
   scroll-behavior: smooth;
-  font-family: 'ClashDisplay-Variable';
-  font-family: 'ClashDisplay-Extralight';
-  font-family: 'ClashDisplay-Light';
-  font-family: 'ClashDisplay-Regular';
-  font-family: 'ClashDisplay-Medium';
-  font-family: 'ClashDisplay-Semibold';
-  font-family: 'ClashDisplay-Bold';
   overflow-x: auto;
   overflow-y: hidden;
 }
@@ -108,3 +101,112 @@ a.active {
   font-size: 12px;
   text-transform: uppercase;
 }
+
+abbr {
+  font-style: italic;
+  position: relative
+}
+
+abbr:hover::after {
+  background: var(--myblue);
+  color: white;
+  border-radius: 0px;
+  bottom: 120%;
+  content: attr(title);
+  display: block;
+  left: 0;
+  padding: 1em;
+  position: absolute;    
+  width: 100%;
+  z-index: 1;
+}
+
+.contact-text{
+  font-size: 18px;
+}
+
+.contact hr{
+  width: 10px;
+  height: 2px;
+  background-color: var(--myblack) !important;
+  margin: 10px 0 10px 0;
+  opacity: 1;
+}
+
+.contact-social{
+  font-family: 'ClashDisplay-Medium';
+  text-transform: uppercase;
+}
+
+.contact-social span{
+  font-family: 'ClashDisplay-Regular';
+}
+
+.contact a{
+  text-decoration: none;
+  border-bottom: 1px solid var(--myred);
+  padding-bottom: 2px;
+  margin: 0 6px;
+  color: var(--myred);
+  cursor: none !important; 
+  text-transform: uppercase;
+  text-align: end;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.contact-info {
+  position: relative;
+}
+
+.copy-button {
+  background-color: #dbdbdb;
+  border: 2px solid #dbdbdb;
+  color: black;
+  padding: 2px 8px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  cursor: none !important;
+}
+
+.copy-button:hover{
+  background-color: black;
+  border: 2px solid black;
+  color: white;
+}
+
+.copy-button:active {
+  background-color: var(--myred);
+  border: 2px solid var(--myred);
+  color: white;
+}
+
+.tooltip {
+  position: fixed;
+  padding: 6px;
+  border-radius: 0;
+  white-space: nowrap;
+  z-index: 1000;
+  opacity: 100 !important;
+  margin-top: -6px !important;
+  font-family: 'ClashDisplay-Medium';
+  text-transform: uppercase;
+  background-color: #000;
+  color: #fff;
+}
+
+.me-picture {
+  -webkit-filter: grayscale(100%);
+	filter: grayscale(100%);
+	filter: gray;
+  transition: 200ms;
+}
+
+.me-picture:hover {
+  -webkit-filter: none;
+	filter: none;
+  transition: 200ms;
+}
+

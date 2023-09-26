@@ -1,0 +1,21 @@
+body{
+    overflow-y: auto !important;
+    background: linear-gradient(#eee, #dbdbdb);
+      height: auto;
+}
+
+.link-back {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    text-transform: uppercase;
+    cursor: none !important;
+  }
+  
+  .link-back::before{
+    content: "🡼";
+  }
+  
+  .link-back:hover{
+    color: var(--myred);
+  }
