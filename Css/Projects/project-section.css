@@ -1,21 +1,385 @@
 body{
-    overflow-y: auto !important;
-    background: linear-gradient(#eee, #dbdbdb);
-      height: auto;
+  overflow-y: auto !important;
+  overflow-x: hidden !important;
+  background: linear-gradient(#eee, #dbdbdb);
+  height: auto;
 }
 
 .link-back {
-    text-decoration: none;
-    color: black;
-    font-weight: bold;
-    text-transform: uppercase;
-    cursor: none !important;
-  }
-  
-  .link-back::before{
-    content: "🡼";
-  }
-  
-  .link-back:hover{
-    color: var(--myred);
-  }
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+  text-transform: uppercase;
+  cursor: none !important;
+}
+
+.link-back::before{
+  content: "🡼";
+}
+
+.link-back:hover{
+  color: var(--myred);
+}
+
+.link-top {
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+  text-transform: uppercase;
+  cursor: none !important;
+}
+
+.link-top::after{
+  content: "🡽";
+}
+
+.link-top:hover{
+  color: var(--myred);
+}
+
+.menu ul {
+  display: flex;
+  justify-content: left;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.menu li {
+  margin: 0 0;
+}
+
+.menu a {
+  text-decoration: none;
+  color: var(--myblack);
+  margin: 0;
+  border-bottom: 0; 
+  font-weight: bold;
+  padding: 10px 0;
+  cursor: none !important;
+  text-transform: uppercase;
+  font-weight: normal;
+  font-size: 20px;
+}
+
+.menu a.active {
+  color: var(--myred) !important;
+  font-family: 'ClashDisplay-Bold';
+}
+
+.menu a:hover {
+  color: var(--myred) !important;
+}
+
+.menu .active {
+  color: var(--myred);
+  font-weight: bold;
+  z-index: 999;
+}
+
+.menu ul li {
+  display: flex;
+  align-items: center;
+}
+
+.footer{
+  margin: 60px 0 30px 0;
+}
+
+.footer a{
+  font-weight: 900;
+  color: var(--myblack);
+  text-decoration: none !important;
+  cursor: none !important;
+}
+
+.footer a:active, a:hover{
+  color: var(--myred);
+}
+
+.footer p{
+  color: var(--myred);
+  font-family: 'ClashDisplay-Bold';
+}
+
+.footer a:not(:last-child)::after {
+  content: " | ";
+  color: #000;
+  padding: 4px 5px 0 5px; 
+}
+
+.onlanguage{
+  color: var(--myred) !important;
+}
+
+.psection-banner{
+  height: 440px;
+  width: 100%;
+  background-position: center;
+  background-size: cover;
+  border: 1px solid black;
+  background-repeat: no-repeat;
+  box-shadow: inset 0em 0em 8em 20px rgba(0, 0, 0, 0.4);
+}
+
+.banner-eva{
+  background-image: url('../../Assets/MainPage/Project-Eva/card-eva-c.jpg');
+  box-shadow: none !important;
+}
+
+.flag-container{
+  margin-left: auto;
+  margin-right: 2px;
+  margin-top: -4px;
+  justify-content: flex-end;
+  display: flex;
+}
+
+.flag {
+  width: 40px;
+  height: 70px;
+  position: relative;
+  clip-path: polygon(0 0, 100% 0, 100% 85%, 50% 100%, 0 85%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 2px;
+  box-shadow: 10px 5px 5px black;
+  overflow-x: hidden !important;
+}
+
+.flag-content {
+  font-size: 20px;
+  font-weight: bold;
+  font-family: 'ClashDisplay-Medium';
+}
+
+.flag:hover {
+  margin-top: -4px !important;
+  transition: 200ms;
+}
+
+.flag-ps{
+  background-color: #001e36; 
+}
+
+.flag-ps .flag-content::after{
+  content: 'Ps';
+  color: #31a8ff;
+}
+
+.flag-ai{
+  background-color: #330000; 
+}
+
+.flag-ai .flag-content::after{
+  content: 'Ai';
+  color: #cb7300;
+}
+
+.flag-fi{
+  background-color: #470137; 
+}
+
+.flag-fi .flag-content::after{
+  content: 'Fi';
+  color: #f35ae9;
+}
+
+.tags{
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  background-color: black;
+  overflow: hidden;
+  white-space: nowrap;
+  padding: 4px 0;
+}
+
+.tags p{
+  margin: 0;
+  text-transform: uppercase;
+  background-color: black;
+  color: white;
+}
+
+.tags p::before{
+  content: '//';
+  margin: 0 4px;
+}
+
+.tags p::last-child{
+  content: '//';
+  margin: 0 4px;
+}
+
+.project-name {
+  font-family: 'ClashDisplay-Bold';
+  font-size: 40px;
+  text-transform: uppercase;
+  margin: 0;
+  line-height: 1;
+}
+
+.project-name span{
+  font-family: 'Clashdisplay-Regular';
+  font-size: 20px;
+  letter-spacing: 0.15em;
+}
+
+.project-intro {
+  margin-top: 10px;
+}
+
+.project-intro p{
+  text-align: justify;
+}
+
+.banner-typo{
+  height: 200px;
+  background-position: center;
+  background-size: cover;
+  border: 1px solid black;
+  background-repeat: no-repeat;
+  background-image: url('../../Assets/Project-Eva/banner-typo.jpg');
+}
+
+.typo-name p{
+  font-size: 32px;
+  font-family: 'ClashDisplay-Bold';
+  text-transform: uppercase;
+  margin: 0;
+}
+
+.typo-name span{
+  font-size: 16px;
+  margin-top: -20px;
+  font-family: 'ClashDisplay-Regular';
+}
+
+.typo-styles{
+  margin-top: 12px;
+  font-size: 24px;
+}
+
+.typo-styles p {
+  border-bottom: 1px solid black;
+}
+
+.clashd-extralight {
+  font-family: 'ClashDisplay-Extralight';
+}
+
+.clashd-light {
+  font-family: 'ClashDisplay-Light';
+}
+
+.clashd-regular {
+  font-family: 'ClashDisplay-Regular';
+}
+
+.clashd-semibold {
+  font-family: 'ClashDisplay-Semibold';
+}
+
+.clashd-bold {
+  font-family: 'ClashDisplay-Bold';
+}
+
+.banner-ref {
+  height: 200px;
+  background-position: center;
+  background-size: cover;
+  border: 1px solid black;
+  background-repeat: no-repeat;
+  background-image: url('../../Assets/Project-Eva/Ref-banner.jpg');
+}
+
+.ref-01 {
+  width: 446px;
+  height: 250px;
+  background-position: center;
+  background-size: cover;
+  border: 1px solid black;
+  background-repeat: no-repeat;
+  background-image: url('../../Assets/Project-Eva/Ref-01.jpg');
+}
+
+.ref-02 {
+  width: 446px;
+  height: 250px;
+  background-position: center;
+  background-size: cover;
+  border: 1px solid black;
+  background-repeat: no-repeat;
+  background-image: url('../../Assets/Project-Eva/Ref-02.jpg');
+}
+
+.banner-colors {
+  height: 200px;
+  background-position: center;
+  background-size: cover;
+  border: 1px solid black;
+  background-repeat: no-repeat;
+  background-image: url('../../Assets/Project-Eva/banner-colors.jpg');
+}
+
+.bar-color {
+  width: 100%;
+  height: 40px;
+}
+
+.presentation {
+  width: 100%;
+  height: 720px;
+  background-position: center;
+  background-size: cover;
+  border: 1px solid black;
+  background-repeat: no-repeat;
+  background-image: url('../../Assets/Project-Eva/Presentation.jpg');
+}
+
+.banner-technology {
+  height: 200px;
+  background-position: center;
+  background-size: cover;
+  border: 1px solid black;
+  background-repeat: no-repeat;
+  background-image: url('../../Assets/Project-Eva/banner-technology.jpg');
+}
+
+.technology {
+  border: inset 1px var(--myblack);
+}
+
+.technology p {
+  background-color: var(--myblack);
+  color: var(--mywhite);
+  padding: 12px 20px;
+  font-size: 24px;
+  font-weight: bold;
+  margin: 0 10px 0 0;
+  min-width: 72px;
+  text-align: center;
+}
+
+.technology span {
+  font-family: 'ClashDisplay-Regular';
+  margin: auto 0;
+  font-size: 24px;
+}
+
+.thank-you {
+  border-top: 1px solid black;
+  border-bottom: 1px solid black;
+  padding: 20px auto;
+  font-size: 48px;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.thank-you p {
+  margin: 0;
+  padding: 20px auto;
+  text-transform: uppercase;
+}

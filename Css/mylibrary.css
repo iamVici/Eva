@@ -28,6 +28,38 @@
   color: var(--mygreen);
 }
 
+.myblack{
+  color: var(--myblack);
+}
+
+.mygold{
+  color: var(--mygold);
+}
+
+.mybgwhite{
+  background-color: var(--mywhite);
+}
+
+.mybggreen{
+  background-color: var(--mygreen);
+}
+
+.mybgblack{
+  background-color: var(--myblack);
+}
+  
+.mybgred{
+  background-color: var(--myred);
+}
+
+.mybgblue{
+  background-color: var(--myblue);
+}
+
+.mybggold{
+  background-color: var(--mygold);
+}
+
 *{
   --myoldred: #e93c40;
 }

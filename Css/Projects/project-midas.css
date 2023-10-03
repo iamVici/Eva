@@ -14,7 +14,7 @@
 }
 
 .proj-progress-midas::after{
-    content: 'Em Hiato';
+    content: 'Em Breve';
     color: var(--mygold);
 }
 

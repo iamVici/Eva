@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script src="text.js"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Texto Rolante</title>
+    <style>
+.container {
+    background-color: black;
+    overflow: hidden;
+    white-space: nowrap;
+    width: 100%;
+    height: 50px;
+}
+
+.marquee {
+    display: flex;
+    animation: marquee 10s linear infinite;
+}
+
+.text {
+    color: white;
+    font-size: 24px;
+}
+
+@keyframes marquee {
+    0% { transform: translateX(0); }
+    100% { transform: translateX(-100%); }
+}
+
+
+
+
+
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div id="marquee" class="marquee">
+            <p class="text">//nike 01</p>
+            <p class="text">//nike 02</p>
+            <p class="text">//nike 03</p>
+            <p class="text">//nike 04</p>
+        </div>
+    </div>
+    
+    
+    
+    <script>
+
+
+    </script>
+    
+    
+    
+</body>
+</html>

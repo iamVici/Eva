@@ -3,7 +3,7 @@ const canvas = document.querySelector('#particles');
 const ctx = canvas.getContext('2d');
 
 // Configurações das partículas
-const numParticles = 40;
+const numParticles = 20;
 const particles = [];
 
 // Redimensiona o canvas com base no tamanho da janela

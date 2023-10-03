@@ -1,8 +1,9 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
+
   <!-- Início -->
-  <title>Portfolio</title>
+  <title>Projeto Eva - 2023</title>
   <meta name="description" content="Portfolio de Victor Pires, designer gráfico e desenvolvedor web.">
   <meta name="author" content="Victor Pires">
   <meta name="keywords" content="design, web development, portfolio">
@@ -10,7 +11,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <!-- Fonts -->
-  <script src="Js/fontup.js"></script>
+  <link rel="stylesheet" href="Css/stellari-display.css">
   <link rel="stylesheet" href="Css/clash-display.css">
   <!-- Css -->
   <link rel="stylesheet" href="Css/badass.css">
@@ -18,11 +19,7 @@
 
   <link rel="stylesheet" href="Css/customcursor.css">
   <link rel="stylesheet" href="Css/Projects/project-section.css">
-
-
   <link rel="stylesheet" href="Css/scroll.css">
-
-  <link rel="stylesheet" href="Css/Projects/alerts.css">
   <!-- Css Projects -->
   <link rel="stylesheet" href="Css/Projects/project-eva.css">
 
@@ -40,99 +37,303 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/ScrollToPlugin.min.js"></script>
   <!-- Script ConsoleLog -->
   <script src="Js/tooltip.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+
 </head>
 
 <body>
-
-    <!-- Cursor Personalizado -->
-    <div class="cursor" style="position:absolute">
-        <div class="cursor__ball cursor__ball--big" style="position:absolute !important">
-            <svg height="30" width="30">
-            <circle cx="15" cy="15" r="12" stroke-width="0"></circle>
-            </svg>
-        </div>
-        <div class="cursor__ball cursor__ball--small" style="position:absolute !important">
-            <svg height="10" width="10">
-            <circle cx="5" cy="5" r="4" stroke-width="0"></circle>
-            </svg>
-        </div>
+  <!-- Cursor Personalizado -->
+  <div class="cursor" style="position:absolute">
+    <div class="cursor__ball cursor__ball--big" style="position:absolute !important">
+        <svg height="30" width="30">
+        <circle cx="15" cy="15" r="12" stroke-width="0"></circle>
+        </svg>
     </div>
+    <div class="cursor__ball cursor__ball--small" style="position:absolute !important">
+        <svg height="10" width="10">
+        <circle cx="5" cy="5" r="4" stroke-width="0"></circle>
+        </svg>
+    </div>
+  </div>
 
-    <div class="container pt-4">
-        <header class="pb-3 mb-4 border-bottom">
-            <div class="d-flex justify-content-between">
-                <p class="m-0">iamvici.com | <span class="myred">Projeto Eva - 2023</span></p>
-                <a href="index.html" class="link-back hoverable">Voltar</a>
-            </div>
-        </header>
-        <div class="row">
-          <!-- Menu Vertical -->
-          <nav class="col-md-3">
-            <ul class="nav flex-column position-fixed">
-                <li><a href="#section1" data-order="1" class="nav-link hoverable section-link active">Hello</a></li>
-                <li><a href="#section2" data-order="2" class="nav-link hoverable section-link">I am Vici</a></li>
-                <li><a href="#section3" data-order="3" class="nav-link hoverable section-link">My Projects</a></li>
-                <li><a href="#section4" data-order="4" class="nav-link hoverable section-link">Let's work together</a></li>
+  <div class="container pt-4">
+    <div class="pb-3 mb-4 px-0" style=" border-bottom: 2px solid var(--myblack);">
+        <div class="d-flex justify-content-between">
+            <p class="m-0">iamvici.com / <span class="myred">Projeto Eva - 2023</span></p>
+            <a href="index.html" class="link-back hoverable">Voltar</a>
+        </div>
+      </div>
+    <div class="row">
+      <!-- Menu Vertical -->
+      <div class="col-md-3 ">
+        <div class="menu position-fixed">
+          <nav id="nav-projsection" class=" px-0">
+            <ul class="nav flex-column">
+                <li><a href="#section1" data-order="1" class="nav-link hoverable section-link active">EVA</a></li>
+                <li><a href="#section2" data-order="2" class="nav-link hoverable section-link">Tipografia</a></li>
+                <li><a href="#section3" data-order="3" class="nav-link hoverable section-link">Paleta de Cores</a></li>
+                <li><a href="#section4" data-order="4" class="nav-link hoverable section-link">Tecnologias</a></li>
+                <li><a href="#section5" data-order="4" class="nav-link hoverable section-link">Inspiração</a></li>
             </ul>
           </nav>
-          <!-- Conteúdo -->
-          <main class="col-md-9 bg-body-tertiary rounded-4 p-4">
-            <div class="p-5 mb-4 bg-dark rounded-4">
-                <div class="container-fluid py-5">
-                  <h1 class="display-5 fw-bold">Custom jumbotron</h1>
-                  <p class="col-md-8 fs-4">Using a series of utilities, you can create this jumbotron, just like the one in previous versions of Bootstrap. Check out the examples below for how you can remix and restyle it to your liking.</p>
-                </div>
-              </div>
-            <!-- Conteúdo do Projeto -->
-            <section id="visao-geral">
-              <h1>Visão Geral do Projeto</h1>
-              <p>Descrição detalhada do seu projeto.</p>
-            </section>
-            <!-- Detalhes do Projeto -->
-            <section id="detalhes">
-              <h1>Detalhes do Projeto</h1>
-              <p>What is Lorem Ipsum?
-                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
-                
-                Why do we use it?
-                It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).
-                
-                Why do we use it?
-                It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).Why do we use it?
-                It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).Why do we use it?
-                It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).
-                Where does it come from?
-                Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum" (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32.
-                
-                The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those interested. Sections 1.10.32 and 1.10.33 from "de Finibus Bonorum et Malorum" by Cicero are also reproduced in their exact original form, accompanied by English versions from the 1914 translation by H. Rackham.</p>
-            </section>
-            <!-- Galeria do Projeto -->
-            <section id="galeria">
-              <h1>Galeria de Imagens</h1>
-              <!-- Adicione suas imagens aqui -->
-              <img src="imagem1.jpg" alt="Imagem 1">
-              <img src="imagem2.jpg" alt="Imagem 2">
-              <!-- Adicione mais imagens conforme necessário -->
-            </section>
-            <!-- Comentários do Projeto -->
-            <section id="comentarios">
-              <h1>Comentários</h1>
-              <!-- Adicione um sistema de comentários aqui, se necessário -->
-            </section>
-          </main>
+          <div class="mt-2 pt-2" style="border-top: 1px solid black;">
+            <a class="hoverable onlanguage me-2">BR</a>
+            <!-- <a href="#" class="hoverable">EN</a> -->
+            <a href="#" class="mx-2" style="color: #aaa !important">EN</a>
+            <a href="#" class="ms-2" style="color: #aaa !important">JP</a>
+          </div>
         </div>
       </div>
 
-    <!-- Inclua a biblioteca jQuery -->
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <!-- Conteúdo -->
+    <div class="col-md-9">
+      <div class="p-4 mb-4" style="background-color: #e0e0e1; border: 1px solid black;">
+        <!-- Introdução -->
+        <section id="section1" class="mb-4">
+          <p class="jp-title">プロジェクト | <span>Eva</span></p>
+          <div class="psection-banner banner-eva">
+            <div class="flag-container">
+              <div class="flag flag-ps">
+                <div class="flag-content"></div>
+              </div>
+              <div class="flag flag-ai">
+                <div class="flag-content"></div>
+              </div>
+            </div>
+          </div>
+          <div class="tags">
+            <p>Portfolio</p>
+            <p>UI - UX</p>
+            <p>Designer Gráfico</p>
+            <p>Website</p>
+            <p>Portfolio</p>
+            <p>Desenvolvedor Web</p>
+            <p>Designer Gráfico</p>
+            <p>Portfolio</p>
+            <p>UI - UX</p>
+            <p>Desenvolvedor Web</p>
+          </div>
+          <div class="row mt-2">
+            <div class="col-md-4">
+              <div>
+                <p class="project-name">
+                  <span class="">[ 01 | Projeto ]</span><br>
+                  Eva
+                </p>
+              </div>
+            </div>
+            <div class="col-md-8">
+              <div class="project-intro">
+                <p>
+                  No <strong>início</strong> dos tempos, a palavra "<strong>Eva</strong>" teve sua origem profundamente enraizada na tradição religiosa e na narrativa da criação. 
+                  Este nome icônico é uma parte fundamental da história bíblica e está ligado à primeira mulher da humanidade, de acordo com a fé judaico-cristã. 
+                  A etimologia de "<strong>Eva</strong>" nos remete ao hebraico antigo, onde é representado por "<strong>חַוָּה</strong>" (Chavah), que traduz-se como "<strong>vida</strong>".
+                </p>
+                <p>
+                  Eva é uma figura central no Livro de Gênesis, no Antigo Testamento da Bíblia, e é conhecida por ser a esposa de Adão e a primeira mulher criada por Deus. 
+                  De acordo com a narrativa, ela foi formada a partir da costela de Adão, simbolizando a origem da humanidade e a união entre homem e mulher.
+                </p>
+                <p>
+                  Essa palavra, "<strong>Eva</strong>", continua a ecoar através das eras, recordando-nos do <strong>início</strong> da história da humanidade, da criação e do papel fundamental desempenhado por essa figura na fé e na tradição judaico-cristã. 
+                  É uma lembrança constante do poder e da complexidade das histórias que moldaram nossa cultura e nossa compreensão do mundo desde o <strong>início</strong> dos tempos.
+                </p>
+                <hr>    
+                <p class="fst-italic">
+                  "Da fome por conhecimento ela surgiu. Da perseverança por sonhar ela se mantém."
+                </p>   
+              </div>
+            </div>
+          </div>
+          <div>
+            <div class="presentation"></div>
+            <p>Meu Portfolio - 2023</p>
+          </div>
+        </section>
 
-    <!-- Inclua a biblioteca do Bootstrap -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+        <!-- Tipografia -->
+        <section id="section2" class="my-4">
+          <p class="jp-title">タイポグラフィ | <span>Tipografia</span></p>
+          <div class="banner-typo"></div>
+          <div class="row mt-4">
+            <div class="col-md-4">
+              <p class="project-name">
+                <span class="">Tipografia</span><br>
+                Clash Display
+              </p>
+            </div>
+            <div class="col-md-8">
+              <div class="typo-styles">
+                <p class="clashd-extralight">Extralight</p>
+                <p class="clashd-light">Light</p>
+                <p class="clashd-regular">Regular</p>
+                <p class="clashd-semibold">Semibold</p>
+                <p class="clashd-bold">Bold</p>
+              </div>
+            </div>
+          </div>
+        </section>
 
-    <!-- Script Cursor Personalizado -->
-    <script src="Js/cursor.js"></script>
+        <!-- Paleta de Cores -->
+        <section id="section3" class="my-4">
+          <p class="jp-title">私について | <span>Tipografia</span></p>
+          <div class="banner-colors"></div>
+          <div class="row mt-4">
+            <div class="col">
+              <div class="bar-color mybgwhite"></div>
+              <div class="d-flex justify-content-between">
+                <p>Branco</p>
+                <p>#f4f4f4</p>
+              </div>
+            </div>
+            <div class="col">
+              <div class="bar-color mybgblack"></div>
+              <div class="d-flex justify-content-between">
+                <p>Preto</p>
+                <p>#070707</p>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-3">
+              <div class="bar-color mybgred"></div>
+              <div class="d-flex justify-content-between">
+                <p>Vermelho</p>
+                <p>#f4f4f4</p>
+              </div>
+            </div>
+            <div class="col-3">
+              <div class="bar-color mybggreen"></div>
+              <div class="d-flex justify-content-between">
+                <p>Verde</p>
+                <p>#54f0ac</p>
+              </div>
+            </div>
+            <div class="col-3">
+              <div class="bar-color mybgblue"></div>
+              <div class="d-flex justify-content-between">
+                <p>Azul</p>
+                <p>#3983fc</p>
+              </div>
+            </div>
+            <div class="col-3">
+              <div class="bar-color mybggold"></div>
+              <div class="d-flex justify-content-between">
+                <p>Golden</p>
+                <p>#ffbc1c</p>
+              </div>
+            </div>
+          </div>
+        </section>
 
+        <!-- Paleta de Cores -->
+        <section id="section4" class="my-4">
+          <p class="jp-title">テクノロジー | <span>Tecnologias</span></p>
+          <div class="banner-technology"></div>
+          <div class="row mt-1">
+            <div class="">
+              <div class="technology d-flex mt-2">
+                <p>Ps</p>
+                <span>Adobe Photoshop</span>
+              </div>
+              <div class="technology d-flex mt-2">
+                <p>Ai</p>
+                <span>Adobe Illustrator</span>
+              </div>
+              <div class="technology d-flex mt-2">
+                <p>Fi</p>
+                <span>Figma</span>
+              </div>
+              <div class="technology d-flex mt-2">
+                <p>Vs</p>
+                <span>Visual Studio Code</span>
+              </div>
+              <div class="technology d-flex mt-2">
+                <p>Cd</p>
+                <span>Bootstrap 5 | Javascript</span>
+              </div>
+            </div>
+          </div>
+        </section>
+      
+        <!-- Paleta de Cores -->
+        <section id="section5" class="my-4">
+          <p class="jp-title">インスピレーション | <span>Inspiração</span></p>
+          <div class="banner-ref"></div>
+          <div class="row mt-2">
+            <div class="col-md-4">
+              <div>
+                <p class="project-name">
+                  <span class="">Inspiração</span><br>
+                  Nier Automata
+                </p>
+              </div>
+            </div>
+            <div class="col-md-8">
+              <div class="project-intro">
+                <p>
+                  <strong>Nier Automata</strong> é um emocionante jogo de ação e RPG lançado em 2017,
+                  desenvolvido pela PlatinumGames e publicado pela Square Enix. O jogo se passa em
+                  um futuro distópico, onde os humanos travam uma batalha épica contra máquinas
+                  alienígenas. Você assume o papel de <strong>2B</strong>, uma androide
+                  habilidosa, e seu companheiro, <strong>9S</strong>, enquanto exploram um mundo
+                  pós-apocalíptico.
+                </p>   
+                <p>
+                  O design de interface é minimalista e futurista, integrado à narrativa, com elementos visuais limpos e iconografia distinta. 
+                  Os jogadores têm a opção de personalização e aproveitam transições suaves entre menus, garantindo uma experiência imersiva.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="d-flex justify-content-between">
+            <div>
+              <div class="ref-01"></div>
+              <p>Nier Automata: Menu</p>
+            </div>
+            <div>
+              <div class="ref-02"></div>
+              <p>Nier Automata: InGame</p>
+            </div>
+          </div>
+        </section>
+
+        <div class="thank-you">
+          <p>Obrigado.</p>
+        </div>
+
+        <div class="d-flex justify-content-between">
+          <a href="#section1" class="link-top hoverable">Ir Topo</a>
+          <a href="index.html" class="link-back hoverable">Voltar</a>
+        </div>
+
+      </div>
+    </div>
+
+
+    <!-- Footer -->
+    <div class="footer" style="z-index:999">
+      <div class="container d-flex justify-content-between p-0 pt-1" style=" border-top: 2px solid var(--myblack);">
+        <div class="bd-highlight">
+          <a class="hoverable onlanguage">BR</a>
+          <!-- <a href="#" class="hoverable">EN</a> -->
+          <a href="#" class="" style="color: #aaa !important">EN</a>
+          <a href="#" class="" style="color: #aaa !important">JP</a>
+        </div>
+        <div class="bd-highlight d-flex align-items-center">
+          <p>2023</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Inclua a biblioteca jQuery -->
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <!-- Inclua a biblioteca do Bootstrap -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <!-- Script Cursor Personalizado -->
+  <script src="Js/cursor.js"></script>
+  <script src="Js/menu-projsection.js"></script>
 </body>
 
 </html>

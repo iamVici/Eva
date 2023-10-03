@@ -13,7 +13,7 @@
 }
 
 .proj-progress-infinity::after{
-    content: 'Em Desenvolvimento' !important;
+    content: 'Em Breve' !important;
     color: var(--myblue) !important;
 }
 
